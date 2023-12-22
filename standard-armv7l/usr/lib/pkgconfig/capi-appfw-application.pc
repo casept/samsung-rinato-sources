@@ -1,0 +1,15 @@
+
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include/appfw
+
+Name: capi-appfw-application
+Description: 
+Version: 
+Requires: capi-base-common 
+Libs: -L${libdir} -lcapi-appfw-application
+Cflags: -I${includedir}
+

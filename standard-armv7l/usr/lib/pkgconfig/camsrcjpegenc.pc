@@ -1,0 +1,10 @@
+prefix = /usr
+exec_prefix=/usr
+libdir = /usr/lib
+includedir = /usr/include
+
+Name : camsrcjpegenc
+Description : camerasrc JPEG encoder
+Version : 0.1
+Libs : -L${libdir} -lcamsrcjpegenc
+Cflags : -I${includedir}

@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: Eina
+Description: A Library that implements fast data types and miscellaneous tools
+Requires.private:  dlog
+Version: 1.7.99.0
+Libs: -L${libdir} -leina -pthread
+Libs.private: -pthread  -ldl -ldl   -lrt -lm
+Cflags: -I${includedir}/eina-1 -I${includedir}/eina-1/eina

@@ -1,0 +1,97 @@
+%sec_build_project_name         rinato_eur_open
+%tizen_build_binary_release_type_eng         1
+%sec_build_binary_debug_enable               1
+%sec_build_binary_crash_enable               1
+%vendor obs://localhost/W:Prod:SM-R380_EUR_XX:Main
+%_project W:Prod:SM-R380_EUR_XX:Main
+
+%distribution W:Prod:SM-R380_EUR_XX:Main
+%_project W:Prod:SM-R380_EUR_XX:Main
+
+### from W:Prod:SM-R380_EUR_XX:Main
+%_repository standard
+
+##############################################################
+# This is temporary global product features
+# Should be moved to sec_product_features
+%sec_product_feature_mdm_disable             1
+%sec_product_feature_telephony_disable       1
+%sec_product_feature_led_disable             1
+
+%dist %{?sec_build_conf_tizen_product_name}%{!?sec_build_conf_tizen_product_name:slp}
+
+%tizen_version 200
+%tizen 2.0
+%vendor tizen
+%_vendor tizen
+%_default_patch_fuzz   2
+%python_x86 1
+
+# python main version
+%py_ver         %(echo `python -c "import sys; print sys.version[:3]"`)
+
+# directories
+%py_prefix      %(echo `python -c "import sys; print sys.prefix"`)
+%py_libdir      %{py_prefix}/lib/python%{py_ver}
+%py_incdir      /usr/include/python%{py_ver}
+%py_sitedir     %{py_libdir}/site-packages
+%py_dyndir      %{py_libdir}/lib-dynload
+
+# pure python modules compilation
+%py_comp        python -c "import compileall; import sys; compileall.compile_dir(sys.argv[1], ddir=sys.argv[1][len('$RPM_BUILD_ROOT'):])"
+%py_ocomp       python -O -c "import compileall; import sys; compileall.compile_dir(sys.argv[1], ddir=sys.argv[1][len('$RPM_BUILD_ROOT'):])"
+
+%ext_info .gz
+%ext_man .gz
+
+%info_add(:-:) test -x /sbin/install-info -a -f %{?2}%{?!2:%{_infodir}}/%{1}%ext_info && /sbin/install-info --info-dir=%{?2}%{?!2:%{_infodir}} %{?2}%{?!2:%{_infodir}}/%{1}%ext_info \
+%{nil}
+
+%info_del(:-:) test -x /sbin/install-info -a ! -f %{?2}%{?!2:%{_infodir}}/%{1}%ext_info && /sbin/install-info --quiet --delete --info-dir=%{?2}%{?!2:%{_infodir}} %{?2}%{?!2:%{_infodir}}/%{1}%ext_info \
+%{nil}
+
+%lang_package \
+%package locale \
+Summary: Translations and Locale for package %{name}\
+Group: Translations\
+AutoReqProv: 0\
+%description locale\
+This package provides translations for package %{name}.\
+%files locale -f %{name}.lang\
+%defattr(-,root,root,-)\
+%{nil}
+
+%docs_package \
+%package docs \
+Summary: Documentation for package %{name}\
+Group: Documentation\
+AutoReqProv: 0\
+%description docs\
+This package provides documentation for package %{name}.\
+%files docs -f documentation.list\
+%defattr(-,root,root,-)\
+%{nil}
+
+%devel_package \
+%package devel \
+Summary: Development files for package %{name}\
+Group: Development\
+%description devel\
+This package provides header files and other developer releated files for package %{name}.\
+%files devel \
+%{_includedir}/*\
+%{_libdir}/pkgconfig/*.pc\
+%{_libdir}/*.so\
+%{nil}
+
+%remove_docs \
+  rm -rf %{?buildroot:%{buildroot}}%{_infodir} \
+  rm -rf %{?buildroot:%{buildroot}}%{_defaultdocdir} \
+  rm -rf %{?buildroot:%{buildroot}}%{_datadir}/doc/%{name} \
+  rm -rf %{?buildroot:%{buildroot}}%{_datadir}/gtk-doc \
+  rm -rf %{?buildroot:%{buildroot}}%{_datadir}/man \
+  find %{?buildroot:%{buildroot}} -regex ".*/man/man./.*\.[0-9]" | xargs rm -f -- \
+  find %{?buildroot:%{buildroot}} -regex ".*/man/../man./.*\.[0-9]" | xargs rm -f -- \
+  find %{?buildroot:%{buildroot}} -regex ".*/man/man./.*\.[0-9]pm" | xargs rm -f --
+%jobs 8
+%_smp_mflags -j8

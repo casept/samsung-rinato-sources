@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/minicontrol
+
+Name: minicontrol-provider
+Description: minicontrol provider supporting library
+Version: 0.0.1
+Requires: evas
+Libs: -L${libdir} -lminicontrol-provider
+Cflags: -I${includedir}

@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: csc-feature
+Description: CSC feature library package
+Version: 1.0
+Requires: glib-2.0 dlog iniparser
+Libs: -L${libdir} -lcsc-feature
+Cflags: -I${includedir} -I${includedir}/csc-feature
+

@@ -1,0 +1,11 @@
+prefix = /usr
+exec_prefix = /usr
+libdir = /usr/lib
+includedir = /usr/include
+
+Name : iniparser
+Description : a free stand-alone ini file parsing library.
+Version : 2.17
+Libs : -L${libdir} -liniparser
+Cflags : -I${includedir}
+

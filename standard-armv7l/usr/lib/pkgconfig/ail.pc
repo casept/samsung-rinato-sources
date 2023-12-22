@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: ail
+Description: Application Information Library
+Version: 0.1.0
+Requires: sqlite3 vconf dlog db-util
+Libs: -L/usr/lib -lail
+Cflags: -I/usr/include

@@ -1,0 +1,11 @@
+prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: native-buffer
+Description: Native Buffer library for sharing buffer between CPU and GPU
+Version: 1.1.0
+
+Requires: libdrm libtbm libdri2 x11 xproto
+Libs: -L${libdir} -lnative-buffer
+Cflags: -I${includedir} -I/usr/include/libdrm

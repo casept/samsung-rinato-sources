@@ -1,0 +1,16 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+sysconfdir=/etc
+localstatedir=/var
+PACKAGE=fontconfig
+confdir=/usr/etc/fonts
+cachedir=/var/cache/fontconfig
+
+Name: Fontconfig
+Description: Font configuration and customization library
+Version: 2.9.0
+Libs: -L${libdir} -lfontconfig
+Libs.private:  -L/usr/lib -lexpat -lfreetype 
+Cflags: -I${includedir}

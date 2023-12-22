@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: ecore-fb
+Description: E core library, FB module
+Requires.private: ecore >= 1.6.99 eina >= 1.6.99 
+Version: 1.7.99.0
+Libs: -L${libdir} -lecore_fb
+Cflags: -I${includedir}/ecore-1

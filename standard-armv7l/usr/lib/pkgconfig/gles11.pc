@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: gles11
+Description: OpenGL-ES 1.1 Library for MALI400MP
+Version: 0.1
+Requires:
+Libs: -L${libdir} -lGLESv1_CM -lEGL
+Cflags: -I${includedir}

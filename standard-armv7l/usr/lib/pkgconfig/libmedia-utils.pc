@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: media contents managing service
+Description: media contents managing service API
+Requires:
+Version: 1.0
+Libs: -L${libdir} -lmedia-utils
+Cflags: -I${includedir}/media-utils -D_COMMERCIAL_FEATURE

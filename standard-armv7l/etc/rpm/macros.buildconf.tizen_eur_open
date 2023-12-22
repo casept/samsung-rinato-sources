@@ -1,0 +1,10 @@
+# build configuration.
+# Configure SEC tizen project build.
+
+# %var_name default_value list of configuration variable.
+
+# tizen build product name 
+# (text)
+%sec_build_conf_tizen_product_group tizen
+%sec_build_conf_tizen_product_name tizenxx
+

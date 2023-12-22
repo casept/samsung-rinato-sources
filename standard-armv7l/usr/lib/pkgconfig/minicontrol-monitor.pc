@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/minicontrol
+
+Name: minicontrol-monitor
+Description: minicontrol monitor supporting library
+Version: 0.0.1
+Requires:
+Libs: -L${libdir} -lminicontrol-monitor
+Cflags: -I${includedir}

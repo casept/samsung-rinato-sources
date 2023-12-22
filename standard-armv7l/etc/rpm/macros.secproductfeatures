@@ -1,0 +1,165 @@
+#
+# Feature naming rule
+#
+#	format)
+#	%sec_product_feature_[Module name]_[Function name] [Values]
+#
+#	- Feature name must be lower case letters.
+#	- Values : BOOLEAN (1/0) or STRING
+#	ex)
+#		Module name - wlan
+#		Function name - disable_5g
+#		Values - 1/0 (default : 0)
+#
+#	%sec_product_feature_wlan_disable_5g 0
+#
+#	ex)
+#		Module name - ril
+#		Function name - mms_uap_tag_name
+#		Values - x-wap-profile
+#
+#	%sec_product_feature_ril_mms_uap_tag_name "x-wap-profile"
+#
+
+####################################################################
+# config for common(HW indenpendent) features
+
+%sec_product_feature_account_docomo 0
+
+%sec_product_feature_calendarsvc_prepared_data_japan 0
+
+%sec_product_feature_call_operator_docomo 0
+
+%sec_product_feature_cloud_enable_content_sync_dropbox 1
+
+%sec_product_feature_contacts_docomo_social_phonebook 0
+%sec_product_feature_contacts_yandex_search 0
+
+%sec_product_feature_csc_disable 0
+
+%sec_product_feature_dailybriefing_news_docomo 0
+%sec_product_feature_dailybriefing_news_orange 0
+%sec_product_feature_dailybriefing_news_cis 0
+%sec_product_feature_dailybriefing_weather_cis 0
+%sec_product_feature_dailybriefing_weather_docomo 0
+%sec_product_feature_dailybriefing_weather_orange 0
+
+%sec_product_feature_display_resolution 720x1280
+
+%sec_product_feature_drm_enable_pr_docomo 0
+
+%sec_product_feature_efl_b2_theme 0
+
+%sec_product_feature_email_docomo_emoji 0
+
+%sec_product_feature_font_default_fonts_redwood_docomo 0
+
+%sec_product_feature_fota_bigdelta_wifi 0
+%sec_product_feature_fota_partition_msm8974 0
+
+%sec_product_feature_graphics_adreno 0
+
+%sec_product_feature_homescreen_layout_japan 0
+%sec_product_feature_homescreen_layout default
+
+%sec_product_feature_hw_enable_back_menu_key 0
+
+%sec_product_feature_indicator_operator_docomo 0
+%sec_product_feature_indicator_operator_orange 0
+
+%sec_product_feature_joyn_enable 0
+
+%sec_product_feature_kies_profile KIES_CONFIG_BASE
+
+%sec_product_feature_livebox_shm 0
+%sec_product_feature_location_feature default
+%sec_product_feature_location_docomo_feature 0
+
+%sec_product_feature_lockscreen_shortcut_data_japan 0
+
+%sec_product_feature_mmfw_audio_qc_ucm 0
+%sec_product_feature_mmfw_encoding_jpn_dcm 0
+%sec_product_feature_mmfw_tz_enable 1
+
+%sec_product_feature_msg_disable_mms 0
+%sec_product_feature_msg_opco_docomo 0
+
+%sec_product_feature_music_store 0
+
+%sec_product_feature_nfc_setting 0
+
+%sec_product_feature_pwlock_enable_setup_wizard_orange 0
+%sec_product_feature_pwlock_launch_docomo_initial_setting_app 0
+
+%sec_product_feature_setting_add_docomo_service 0
+%sec_product_feature_setting_disable_network_by_tethering_on 0
+
+%sec_product_feature_smartsearch_yandex_search 0
+
+%sec_product_feature_smemo_disable 0
+
+%sec_product_feature_storyalbum_eanble_ext_theme 0
+
+%sec_product_feature_telephony_disable 0
+%sec_product_feature_telephony_operator_orange 0
+
+%sec_product_feature_tethering_docomo_ui 0
+
+%sec_product_feature_twitter_docomo 0
+
+%sec_product_feature_video_everglaes 0
+
+%sec_product_feature_video_telephony_msm8974 0
+
+%sec_product_feature_wapi_bluetooth_support 1
+%sec_product_feature_wapi_callhistory_support 1
+%sec_product_feature_wapi_nbs_support 1
+%sec_product_feature_wapi_nfc_support 1
+%sec_product_feature_wapi_push_support 1
+%sec_product_feature_wapi_se_support 1
+
+%sec_product_feature_webkit_docomo_emoji 0
+%sec_product_feature_webkit_ua_string_format default_ua_string_format
+
+%sec_product_feature_wlan_changeable_scan_time 1
+%sec_product_feature_wlan_check_deepsleep 1
+%sec_product_feature_wlan_concurrent_mode 0
+%sec_product_feature_wlan_direct_skip_dhcp 1
+%sec_product_feature_wlan_dual_band_support 1
+%sec_product_feature_wlan_get_frequency 1
+%sec_product_feature_wlan_prevent_excessive_scanning 1
+%sec_product_feature_wlan_sec_flush_scan_result_list 1
+%sec_product_feature_wlan_sec_retry_popup 1
+%sec_product_feature_wlan_sec_wes 1
+%sec_product_feature_wlan_concurrent_mode_in_same_channel 0
+%sec_product_feature_wlan_china_wapi 0
+%sec_product_feature_wlan_wifidisplay 0
+%sec_product_feature_wlan_hotspot2_0 0
+
+%sec_product_feature_telephony_operator_docomo 0
+
+%sec_product_feature_phone_docomo_ui 0
+
+%sec_product_feature_text_input_disable_emoticon 0
+
+####################################################################
+# config for OAL(HW dependent) features
+
+%sec_product_feature_felica_enable 0
+
+%sec_product_feature_mmfw_codec_slsi 0
+%sec_product_feature_mmfw_codec_qc 0
+%sec_product_feature_mmfw_udrm_enable 0
+
+%sec_product_feature_telephony_qmi_mdm 0
+%sec_product_feature_telephony_qmi_msm 0
+
+%sec_product_feature_wlan_board_bcmdhd 0
+%sec_product_feature_wlan_board_qcwcn 0
+%sec_product_feature_wlan_board_atheros 0
+%sec_product_feature_wlan_board_steconn 0
+%sec_product_feature_wlan_board_sd87xx 0
+
+%sec_product_feature_zero_width_space 0
+
+%sec_product_feature_mmfw_enable_qcom_adsp 0

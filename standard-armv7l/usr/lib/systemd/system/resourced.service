@@ -1,0 +1,23 @@
+[Unit]
+Description=Resource management daemon
+After=tizen-system.target
+Wants=tizen-system.target
+
+[Service]
+Type=simple
+EnvironmentFile=/run/tizen-mobile-env
+Environment="CGROUP_FREEZER_THAWED=/sys/fs/cgroup/freezer/thawed"
+Environment="CGROUP_FREEZER_FROZEN=/sys/fs/cgroup/freezer/frozen"
+Environment="CGROUP_MEMORY_SWAP=/sys/fs/cgroup/memory/swap"
+Environment="SWAPFILE=/opt/usr/swapfile"
+ExecStartPre=-/bin/mkdir -pm 755 $CGROUP_FREEZER_THAWED
+ExecStartPre=-/bin/mkdir -pm 755 $CGROUP_FREEZER_FROZEN
+ExecStartPre=-/bin/sh -c "/bin/echo FROZEN > $CGROUP_FREEZER_FROZEN/freezer.state"
+ExecStartPre=-/bin/mkdir -pm 755 $CGROUP_MEMORY_SWAP
+ExecStartPre=-/bin/sh -c "/bin/echo 3 > $CGROUP_MEMORY_SWAP/memory.move_charge_at_immigrate"
+ExecStart=/usr/bin/resourced -s 1 -u 60
+Restart=always
+RestartSec=0
+
+[Install]
+WantedBy=multi-user.target

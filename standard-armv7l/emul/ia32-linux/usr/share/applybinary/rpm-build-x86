@@ -1,0 +1,5 @@
+/usr/bin/rpmbuild
+/usr/lib/rpm/debugedit
+/usr/lib/rpm/elfdeps
+/usr/lib/rpm/javadeps
+/usr/lib/rpm/rpmdeps

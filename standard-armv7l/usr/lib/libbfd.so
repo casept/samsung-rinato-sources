@@ -1,0 +1,8 @@
+/* GNU ld script */
+
+/* Ensure this .so library will not be used by a link for a different format
+   on a multi-architecture system.  */
+OUTPUT_FORMAT(elf32-littlearm)
+
+/* The libz dependency is unexpected by legacy build scripts.  */
+INPUT ( /usr/lib/libbfd.a -liberty -lz )

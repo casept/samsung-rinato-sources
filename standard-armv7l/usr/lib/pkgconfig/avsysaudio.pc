@@ -1,0 +1,11 @@
+prefix = /usr
+exec_prefix= /usr
+libdir = /usr/lib
+includedir = /usr/include
+
+Name : avsysaudio
+Description : Multimedia Framework AV system Audio Library
+Requires : alsa libascenario mm-log libpulse-simple
+Version : 1.0
+Libs : -L${libdir} -lavsysaudio -lrt -lpthread 
+Cflags : -I${includedir}/avsystem

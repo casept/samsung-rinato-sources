@@ -1,0 +1,6 @@
+/bin/rpm
+/usr/bin/rpm2cpio
+/usr/bin/rpmdb
+/usr/bin/rpmquery
+/usr/bin/rpmsign
+/usr/bin/rpmverify

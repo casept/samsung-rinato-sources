@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/feedback
+
+Name: feedback
+Description: 
+Version: 0.1.4
+Requires: capi-base-common
+Libs: -L${libdir} -lfeedback
+Cflags: -I${includedir}

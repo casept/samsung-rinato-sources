@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: app-core-efl
+Description: SAMSUNG Linux platform efl application library
+Version: 1.1
+Requires: elementary appcore-common dlog
+Libs: -L${libdir} -lappcore-efl
+Cflags: -I${includedir} -I${includedir}/appcore

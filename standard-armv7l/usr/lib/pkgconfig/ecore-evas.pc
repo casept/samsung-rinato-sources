@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: ecore-evas
+Description: E core library, Evas module
+Requires.private: ecore-fb >= 1.6.99 ecore-x >= 1.6.99 ecore-input >= 1.6.99 ecore-input-evas >= 1.6.99 evas >= 1.6.99 ecore-ipc >= 1.6.99 ecore >= 1.6.99 eina >= 1.6.99 
+Version: 1.7.99.0
+Libs: -L${libdir} -lecore_evas
+Cflags: -I${includedir}/ecore-1

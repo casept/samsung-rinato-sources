@@ -1,0 +1,10 @@
+prefix = /usr
+exec_prefix= /usr
+libdir = /usr/lib
+includedir = /usr/include
+
+Name : mmfpcmsound
+Description : Multimedia Framework PCM Sound Library
+Version : 1.0
+Libs : -L${libdir} -lmmfpcmsound 
+Cflags : -I${includedir}/mmf 

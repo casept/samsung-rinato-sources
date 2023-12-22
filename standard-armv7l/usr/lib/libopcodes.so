@@ -1,0 +1,7 @@
+/* GNU ld script */
+
+/* Ensure this .so library will not be used by a link for a different format
+   on a multi-architecture system.  */
+OUTPUT_FORMAT(elf32-littlearm)
+
+INPUT ( /usr/lib/libopcodes.a -lbfd )

@@ -1,0 +1,15 @@
+# build configuration.
+# Configure SEC tizen project build.
+
+# Default configuration.
+# - macros.buildconf file is sourced(included) first
+# 	then macros.buildconf.MODEL_REGION_OPERATOR file is sourced later.
+# 	So in macros.buildconf.MODEL_REGION_OPERATOR file, only set variables different from default value.
+
+# %var_name default_value list of configuration variable.
+
+# tizen build product name 
+# (text)
+#%sec_build_conf_tizen_product_group
+#%sec_build_conf_tizen_product_name
+

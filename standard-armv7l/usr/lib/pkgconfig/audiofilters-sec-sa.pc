@@ -1,0 +1,12 @@
+prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: Samsung Sound Alive Filter package
+Description: Samsung Sound Alive Filter
+Version: 0.1
+Requires:
+Libs: -L${libdir} -l_SoundAlive_ver118k
+
+Cflags: -I${includedir}/audiofilters
+

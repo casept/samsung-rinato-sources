@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<label>svi-data</label>
+	<description>Vibration Resource</description>
+	<vibration>
+		<label>FEEDBACK_PATTERN_HOLD</label>
+		<!-- Touch (v1.3) -->
+		<data>AQABAAoAFAAAACACAAB/AAAxAABNAGEAZwBTAH</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_KEY_STAR</label>
+		<!-- Touch (140306 add) -->
+		<data>AQABAAoAFAAAACACAAB/AAAxAABNAGEAZwBTAH</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_KEY_SHARP</label>
+		<!-- Touch (140306 add) -->
+		<data>AQABAAoAFAAAACACAAB/AAAxAABNAGEAZwBTAH</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_MESSAGE</label>
+		<data>AQACABoALgAAAA0A8eAB4gAA8eAB4gH0/yAPAAB/AAChAAAAEgBUAGkAbQBlAGwAaQBuAGUAAABNAGEA</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_MESSAGE_ON_CALL</label>
+		<data>AQACABoALgAAAA0A8eAB4gAA8eAB4gH0/yAPAAAZAACgAAAAEgBUAGkAbQBlAGwAaQBuAGUAAABNAGEA</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_EMAIL</label>
+		<data>AQACABQALgAAAAcA8eAB4gAA/yAPAAB/AAChAAAAEgBUAGkAbQBlAGwAaQBuAGUAAABNAGEAZw</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_EMAIL_ON_CALL</label>
+		<data>AQACABQALgAAAAcA8eAB4gAA/yAPAAAZAACgAAAAEgBUAGkAbQBlAGwAaQBuAGUAAABNAGEAZw</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_WAKEUP</label>
+		<data>AQACAB4ALgAAABIA8eAB4gAA8eAB4gXc0AfQ0QD/IF0AAH8AAMEAABIAVABpAG0AZQBsAGkAbgBlAAAATQBh</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_WAKEUP_ON_CALL</label>
+		<data>AQACAB4ALgAAABIA8eAB4gAA8eAB4gXc0AfQ0QD/IF0AABkAAMAAABIAVABpAG0AZQBsAGkAbgBlAAAATQBh</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_SCHEDULE</label>
+		<!-- Noti_General (140306 changed) -->
+		<data>AQABAAoAFAAAACAfAAB/IUFBAABQAGUAcgBpAG</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_SCHEDULE_ON_CALL</label>
+		<!-- Noti_General (140306 changed) -->
+		<data>AQABAAoAFAAAACAfAAB/IUFBAABQAGUAcgBpAG</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_TIMER</label>
+		<!-- Notification_Alarm_Timer (v1.3) -->
+		<data>AQADADIAOgAAABMAGwDx4AHiAADx4AHiA+jx4ALiBdz/IB8AAH+hHkEwyADIAAAAACA+AAAAgT6BAAAAEgAkAFQAaQBtAGUAbABpAG4AZQAAAFAAZQBy</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_TIMER_ON_CALL</label>
+		<!-- Notification_Alarm_Timer (v1.3) -->
+		<data>AQADADIAOgAAABMAGwDx4AHiAADx4AHiA+jx4ALiBdz/IB8AAH+hHkEwyADIAAAAACA+AAAAgT6BAAAAEgAkAFQAaQBtAGUAbABpAG4AZQAAAFAAZQBy</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_GENERAL</label>
+		<!-- Noti_General (140306 changed) -->
+		<data>AQABAAoAFAAAACAfAAB/IUFBAABQAGUAcgBpAG</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_GENERAL_ON_CALL</label>
+		<!-- Noti_General (140306 changed) -->
+		<data>AQABAAoAFAAAACAfAAB/IUFBAABQAGUAcgBpAG</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_CHARGERCONN</label>
+		<!-- System_Error (v1.3) -->
+		<data>AQACABoALgAAAA0A8eAB4gAA8eAB4gCW/yAGAAB/AABBAAAAEgBUAGkAbQBlAGwAaQBuAGUAAABNAGEA</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_CHARGERCONN_ON_CALL</label>
+		<!-- System_Error (v1.3) -->
+		<data>AQACABoALgAAAA0A8eAB4gAA8eAB4gCW/yAGAAB/AABBAAAAEgBUAGkAbQBlAGwAaQBuAGUAAABNAGEA</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_CHARGING_ERROR</label>
+		<!-- System_Error (v1.3) -->
+		<data>AQACABoALgAAAA0A8eAB4gAA8eAB4gCW/yAGAAB/AABBAAAAEgBUAGkAbQBlAGwAaQBuAGUAAABNAGEA</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_CHARGING_ERROR_ON_CALL</label>
+		<!-- System_Error (v1.3) -->
+		<data>AQACABoALgAAAA0A8eAB4gAA8eAB4gCW/yAGAAB/AABBAAAAEgBUAGkAbQBlAGwAaQBuAGUAAABNAGEA</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_LOWBATT</label>
+		<!-- System_Error (v1.3) -->
+		<data>AQACABoALgAAAA0A8eAB4gAA8eAB4gCW/yAGAAB/AABBAAAAEgBUAGkAbQBlAGwAaQBuAGUAAABNAGEA</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_LOWBATT_ON_CALL</label>
+		<!-- System_Error (v1.3) -->
+		<data>AQACABoALgAAAA0A8eAB4gAA8eAB4gCW/yAGAAB/AABBAAAAEgBUAGkAbQBlAGwAaQBuAGUAAABNAGEA</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_CALLCONNECT</label>
+		<!-- System_Short (v1.3) -->
+		<data>AQABAAoAGgAAACAGAAB/AABBAABNAGEAZwBTAHcAZQBl</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_DISCALLCONNECT</label>
+		<!-- System_Short (v1.3) -->
+		<data>AQABAAoAGgAAACAGAAB/AABBAABNAGEAZwBTAHcAZQBl</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_VIBRATION_ON</label>
+		<!-- System_Long (v1.3) -->
+		<data>AQABABIAFAAAADCWAJYAAAAAIB8AAH8AAEEAAE0AYQBnAF</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_BT_CONNECTED</label>
+		<!-- System_Short (Sound v1.4) -->
+		<data>AQABAAoAGgAAACAGAAB/AABBAABNAGEAZwBTAHcAZQBl</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_BT_DISCONNECTED</label>
+		<!-- System_Short (v1.3) -->
+		<data>AQABAAoAGgAAACAGAAB/AABBAABNAGEAZwBTAHcAZQBl</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_BT_PAIRING</label>
+		<!-- System_Mild (Sound v1.4) -->
+		<data>AQABAAoAGgAAACAPAAB/AAChAABNAGEAZwBTAHcAZQBl</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_BT_WAITING</label>
+		<!-- System_Progress_v3 (Sound v1.5) -->
+		<data>AQADACwAOgAAAA0AHQDx4AHiAADx4ALiAfT/MA8ADwAAAAAgHwAAfwAAQSBdAAAAAADBAAAAEgAkAFQAaQBtAGUAbABpAG4AZQAAAE0AYQBnAF</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_SAFETY_ALERT</label>
+		<!-- Safety_Warning (v1.5) -->
+		<data>AQADADgAQgAAABkAKQDx4ALiAC3x4AHiAM3x4ALiArfx4AHiA1f/MJYAlgAAAAAgHAAAfwAAISAMAAB/AACBAAAAEgAkAFQAaQBtAGUAbABpAG4AZQAAAE0AYQBnAFMAdw</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_SEND_SOS_MESSAGE</label>
+		<!-- System_Short (v2.0) -->
+		<data>AQABAAoAGgAAACAGAAB/AABBAABNAGEAZwBTAHcAZQBl</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_END_SOS_MESSAGE</label>
+		<!-- Safety_Send_SOS_Message (v2.0) -->
+		<data>AQACACAAKAAAABMA8eAB4gAA8eAB4gEs8eAB4gJY/yAGAAB/AABBAAAAEgBUAGkAbQBlAGwAaQBuAGUA</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_CMAS</label>
+		<!-- Safety_CMAS (v1.3) -->
+		<data>AQADAEwALAAAACUANQDx4AHiAADx4ALiCcTx4ALiD6Dx4AHiFXzx4ALiH0Dx4ALiJRz/MAAAAQAAWQAgfQAAfyFBATAAAAEAAFkAID4AAH8hQYEAAAASABwAVABpAG0A</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_SPEED_UP</label>
+		<!-- Noti_General (140404 changed) -->
+		<data>AQABABIAFAAAADAAAAAAAFkAICMAAH8xFAEAAFAAZQByAG</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_SLOW_DOWN</label>
+		<!-- Noti_General (140404 changed) -->
+		<data>AQABABIAFAAAADAAAAAAAFkAICMAAH8xFAEAAFAAZQByAG</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_KEEP_THIS_PACE</label>
+		<!-- Noti_General (140404 changed) -->
+		<data>AQABABIAFAAAADAAAAAAAFkAICMAAH8xFAEAAFAAZQByAG</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_GOAL_ACHIEVED</label>
+		<!-- Noti_General (140306 changed) -->
+		<data>AQABAAoAFAAAACAfAAB/IUFBAABQAGUAcgBpAG</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_EXERCISE_COUNT</label>
+		<!-- System_Short_Half (v1.6) -->
+		<data>AQABAAoAFAAAACADAAB/AAAhAABNAGEAZwBTAH</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_START_CUE</label>
+		<!-- Guidance_Start (v1.6) -->
+		<data>AQABABIAFAAAADBkAGQAAAAAIC4AAH8AAOEAAE0AYQBnAF</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_SUCCESS</label>
+		<!-- System_Short (v1.3) -->
+		<data>AQABAAoAGgAAACAGAAB/AABBAABNAGEAZwBTAHcAZQBl</data>
+	</vibration>
+	<vibration>
+		<label>FEEDBACK_PATTERN_FAILURE</label>
+		<!-- System_Error (v1.3) -->
+		<data>AQACABoALgAAAA0A8eAB4gAA8eAB4gCW/yAGAAB/AABBAAAAEgBUAGkAbQBlAGwAaQBuAGUAAABNAGEA</data>
+	</vibration>
+</config>

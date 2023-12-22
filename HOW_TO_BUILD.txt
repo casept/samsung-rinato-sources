@@ -1,0 +1,31 @@
+System requirement (Strongly recommended)
+  * OS: Ubuntu 12.04 or newer
+
+Installing Development Tools in Ubuntu
+  * Open the source list by using text editor.
+    $ sudo vi /etc/apt/sources.list
+  * Add Tizen tools repository to the source list.
+    deb http://download.tizen.org/tools/latest-release/Ubuntu_12.04 /
+  * Resynchronize the package index files from the sources specified in the source list by executing the following command:
+    $ sudo apt-get update
+  * Install a development tool by executing the following command:
+    $ sudo apt-get install gbs
+
+Build root strap setup
+  * Download build rootstrap and unpack into home directory
+    $ sudo tar xfz {build rootstrap name} --same-owner
+  * Change root to the build rootstrap
+    $ sudo chroot standard-armv7l
+  * Change account to abuild
+    $ su abuild
+
+Building a package
+  * Source packages are in the /home/abuild/rpmbuild/SRPMS
+  * Build a package with rpmbuild
+    $ cd /home/abuild/rpmbuild/SRPMS
+    $ rpmbuild --rebuild {src.rpm name}
+  * You can find binary rpms in /home/abuild/rpmbuild/RPMS
+
+Install a package
+  * rpm -ivh {src.rpm name}
+  * if {src.rpm name} is already installed : rpm -ivh --force {src.rpm name} 

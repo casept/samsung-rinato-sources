@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/db-util
+
+Name: db-util
+Description: DB Utility
+Version: 0.1.0
+Requires: sqlite3 dlog glib-2.0 icu-i18n
+Libs: -L${libdir} -lSLP-db-util
+Cflags: -I${includedir}

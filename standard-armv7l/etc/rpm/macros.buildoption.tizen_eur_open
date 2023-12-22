@@ -1,0 +1,16 @@
+# build options
+# SEC tizen project build options.
+
+# %var_name default_value list of option variable.
+
+# build ID and Number
+%sec_build_option_version GEAR20BND8
+
+# product model info
+%sec_build_option_product_brand samsung
+%sec_build_option_product_manufacturer samsung
+%sec_build_option_product_name gear2xx
+%sec_build_option_product_model GEAR2
+
+# CSC version Number
+%sec_build_option_csc_version 0BND8

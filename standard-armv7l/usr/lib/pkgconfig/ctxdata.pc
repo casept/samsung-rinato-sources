@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: ctxdata
+Description: data types with functional mappings and context callbacks 
+Requires:
+Version: 0.2.4
+Libs: -L${libdir} -lctxdata
+Cflags: -I${includedir}

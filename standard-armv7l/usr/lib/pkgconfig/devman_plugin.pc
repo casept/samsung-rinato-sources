@@ -1,0 +1,12 @@
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=/usr/bin
+libdir=/usr/lib
+includedir=/usr/include/device-node
+
+Name: devman_plugin
+Description: SAMSUNG Linux platform devman plugin library
+Version: 0.1
+Requires:
+Cflags: -I${includedir}

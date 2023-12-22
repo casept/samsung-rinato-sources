@@ -1,0 +1,12 @@
+prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: Samsung SamplingRate Converter Filter package
+Description: Samsung SamplingRate Converter Filter
+Version: 0.1
+Requires:
+Libs: -L${libdir} -l_SamplingRateConverter_v120611
+
+Cflags: -I${includedir}/audiofilters
+

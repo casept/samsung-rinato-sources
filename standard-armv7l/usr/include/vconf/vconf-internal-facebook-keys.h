@@ -1,0 +1,58 @@
+/*
+ * vconf-internal-keys
+ *
+ * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
+ *
+ * Contact: JungHwan Ku <junghwan.ku@samsung.com>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
+
+#ifndef __VCONF_INTERNAL_FACEBOOK_SYNC_KEYS_H__
+#define __VCONF_INTERNAL_FACEBOOK_SYNC_KEYS_H__
+
+/**
+ * This file defines keys and values.
+ *
+ * @file        vconf-internal-facebook-keys.h
+ * @defgroup    vconf_internal_facebook_key Definitions of internal shared Keys for facebook
+ * @ingroup     vconf_internal_key
+ * @author      junghwan.ku@samsung.com
+ * @version     0.1
+ * @brief       This file has the definitions of shared keys for facebook \n
+ */
+
+/* ========================== Facebook Keys & Values ============================ */
+/**
+ * @addtogroup vconf_internal_sync_key
+ * @{
+ * @brief Facebook & Values\n
+ *        Maintainer : junghwan.ku@samsung.com
+ */
+
+/**
+ * @brief Facebook sync status for indicator. facebook service will set value.
+ *
+ * 0 : Not synchronizing \n
+ * 1 : Synchronizing \n
+ */
+#define VCONFKEY_FACEBOOK_SYNC_STATE "db/sync/facebook"
+
+
+/**
+ * @}
+ */
+
+#endif	/* __VCONF_INTERNAL_FACEBOOK_SYNC_KEYS_H__ */
+

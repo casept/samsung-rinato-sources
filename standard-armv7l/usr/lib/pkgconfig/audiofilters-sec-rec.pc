@@ -1,0 +1,12 @@
+prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: Samsung Recording Filter package
+Description: Samsung Recording Filter
+Version: 0.1
+Requires:
+Libs: -L${libdir} -l_SamsungRec_V04001_redwood
+
+Cflags: -I${includedir}/audiofilters
+

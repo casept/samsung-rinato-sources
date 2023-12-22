@@ -1,0 +1,11 @@
+prefix = /usr
+exec_prefix= /usr
+libdir = /usr/lib
+includedir = /usr/include
+
+Name : LifeVibesVoiceEngine
+Description : NXP Software Life Vibes(TM) Voice Engine
+Requires : 
+Version : 1.0
+Libs : -L${libdir} -llvvefs
+Cflags : -I${includedir}/lvvefs

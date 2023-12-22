@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/aul
+
+Name: libaul
+Description: new application utility library 
+Version: 0.1.0
+Requires: sqlite3 bundle ail glib-2.0 xdgmime
+Libs: -L${libdir} -laul
+Cflags: -I${includedir}

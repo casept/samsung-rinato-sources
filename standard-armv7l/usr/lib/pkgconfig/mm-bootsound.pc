@@ -1,0 +1,11 @@
+prefix = /usr
+exec_prefix= /usr
+libdir = /usr/lib
+includedir = /usr/include
+
+Name : mmfbootsound
+Description : Multimedia Framework Boot Sound Library
+Requires : mm-common mm-log
+Version : 1.0
+Libs : -L${libdir} -lmmfbootsound 
+Cflags : -I${includedir}/mmf 

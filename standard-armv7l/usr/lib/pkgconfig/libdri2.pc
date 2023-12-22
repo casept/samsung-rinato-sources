@@ -1,0 +1,10 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: libdri2
+Description: DRI2 X library for the X Client
+Version: 2.1
+Libs: -L${libdir} -ldri2
+Cflags: -I${includedir} -I${includedir}/dri2

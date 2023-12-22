@@ -1,0 +1,12 @@
+prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: Samsung S5PC110 codec package
+Description: Samsung S5PC110 codec
+Version: 1.0
+Requires:
+Libs: -L${libdir} -lscmn -lswmv8d
+
+Cflags: -I${includedir}/savs
+

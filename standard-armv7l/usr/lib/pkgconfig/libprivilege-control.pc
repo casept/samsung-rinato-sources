@@ -1,0 +1,10 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: libprivilege-control 
+Description: Library to control privilege of application
+Version: 0.0.2
+Libs: -L${libdir} -lprivilege-control
+Cflags: -I${includedir}/

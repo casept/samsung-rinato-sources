@@ -1,0 +1,11 @@
+prefix = /usr
+exec_prefix= ${prefix}
+libdir = ${exec_prefix}/lib
+includedir = ${prefix}/include
+
+Name : mm-session
+Description : Multimedia Session Library
+Requires : audio-session-mgr mm-common
+Version : 1.0
+Libs : -L${libdir} -lmmfsession
+Cflags : -I${includedir}/mmf

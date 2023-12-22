@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/notification
+
+Name: notification
+Description: Notification Library
+Version: 0.1.0
+Requires: bundle 
+Libs: -L${libdir} -lnotification
+Cflags: -I${includedir}

@@ -1,0 +1,829 @@
+[    0s] Memory limit set to 16586448KB
+[    0s] Using BUILD_ROOT=/var/tmp/build-root/standard-armv7l
+[    0s] Using BUILD_ARCH=armv7l:armv6l:armv5tel
+[    0s] 
+[    0s] 
+[    0s] Kalimdor started "build test-pkg.spec" at Wed Apr  9 01:38:14 UTC 2014.
+[    0s] 
+[    0s] 
+[    0s] processing specfile /home/sigmunds/work/make_rootstrap/W:Prod:SM-R380_EUR_XX:Main/test-pkg/test-pkg.spec ...
+[    0s] running changelog2spec --target rpm --file /home/sigmunds/work/make_rootstrap/W:Prod:SM-R380_EUR_XX:Main/test-pkg/test-pkg.spec
+[    0s] init_buildsystem --configdir /usr/lib/build/configs --cachedir /var/cache/build --clean --rpmlist /tmp/rpmlist.JDStS2 /home/sigmunds/work/make_rootstrap/W:Prod:SM-R380_EUR_XX:Main/test-pkg/test-pkg.spec ...
+[    0s] registering binfmt handlers for VM
+[    0s] warning: /usr/lib/build/qemu-reg: line 7: interpreter '/usr/bin/qemu-arm64-binfmt' not found
+[    0s] write: Invalid argument
+[    0s] /proc/sys/fs/binfmt_misc/register: write failed
+[    0s] /usr/lib/build/qemu-reg: line 7: write failed. Content: :aarch64:M::\x7fELF\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\xb7:\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xfe\xff\xff:/usr/bin/qemu-arm64-binfmt:P
+[    0s] 
+[    0s] /.build/qemu-reg: No such file or directory
+[    0s] /.build/qemu-reg: failed. Trying alternate binfmt file
+[    0s] warning: /usr/lib/build/qemu-reg: line 7: interpreter '/usr/bin/qemu-arm64-binfmt' not found
+[    0s] write: Invalid argument
+[    0s] /proc/sys/fs/binfmt_misc/register: write failed
+[    0s] /usr/lib/build/qemu-reg: line 7: write failed. Content: :aarch64:M::\x7fELF\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\xb7:\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xfe\xff\xff:/usr/bin/qemu-arm64-binfmt:P
+[    0s] 
+[    0s] /usr/lib/build/qemu-reg: binfmt registration failed
+[    1s] cycle: filesystem -> setup
+[    1s]   breaking dependency setup -> filesystem
+[    1s] cycle: eglibc -> eglibc-common -> bash
+[    1s]   breaking dependency eglibc-common -> bash
+[    1s] cycle: eglibc -> eglibc-common -> coreutils -> bash
+[    1s]   breaking dependency coreutils -> bash
+[    1s] cycle: eglibc -> eglibc-common -> coreutils
+[    1s]   breaking dependency eglibc-common -> coreutils
+[    1s] cycle: eglibc -> eglibc-common
+[    1s]   breaking dependency eglibc-common -> eglibc
+[    1s] cycle: libgcc -> eglibc -> eglibc-common
+[    1s]   breaking dependency eglibc -> eglibc-common
+[    1s] cycle: libgcc -> eglibc
+[    1s]   breaking dependency libgcc -> eglibc
+[    1s] cycle: rpm-libs -> rpm
+[    1s]   breaking dependency rpm-libs -> rpm
+[    1s] [1/51] preinstalling libgcc...
+[    1s] [2/51] preinstalling setup...
+[    1s] [3/51] preinstalling filesystem...
+[    1s] [4/51] preinstalling eglibc...
+[    1s] [5/51] preinstalling eglibc-common...
+[    1s] [6/51] preinstalling bash...
+[    1s] [7/51] preinstalling bzip2-libs...
+[    1s] [8/51] preinstalling diffutils...
+[    1s] [9/51] preinstalling elfutils-libelf...
+[    1s] [10/51] preinstalling libattr...
+[    1s] [11/51] preinstalling liblua...
+[    1s] [12/51] preinstalling libstdc++...
+[    1s] [13/51] preinstalling ncurses-libs...
+[    1s] [14/51] preinstalling nspr...
+[    1s] [15/51] preinstalling nss-softokn-freebl...
+[    1s] [16/51] preinstalling popt...
+[    1s] [17/51] preinstalling readline...
+[    1s] [18/51] preinstalling sed...
+[    1s] [19/51] preinstalling sqlite...
+[    1s] [20/51] preinstalling tar...
+[    1s] [21/51] preinstalling xz-libs...
+[    1s] [22/51] preinstalling zlib...
+[    1s] [23/51] preinstalling qemu-linux-user-arm...
+[    1s] [24/51] preinstalling libcap...
+[    1s] [25/51] preinstalling libacl...
+[    1s] [26/51] preinstalling libfile...
+[    1s] [27/51] preinstalling bzip2...
+[    1s] [28/51] preinstalling nss...
+[    1s] [29/51] preinstalling coreutils...
+[    1s] [30/51] preinstalling rpm-libs...
+[    1s] [31/51] preinstalling tizen-accelerator...
+[    1s] [32/51] preinstalling rpm...
+[    1s] [33/51] preinstalling bzip2-libs-x86-arm...
+[    1s] [34/51] preinstalling eglibc-x86-arm...
+[    1s] [35/51] preinstalling elfutils-libelf-x86-arm...
+[    1s] [36/51] preinstalling libacl-x86-arm...
+[    1s] [37/51] preinstalling libattr-x86-arm...
+[    1s] [38/51] preinstalling libcap-x86-arm...
+[    1s] [39/51] preinstalling libgcc-x86-arm...
+[    1s] [40/51] preinstalling liblua-x86-arm...
+[    1s] [41/51] preinstalling ncurses-libs-x86-arm...
+[    2s] [42/51] preinstalling nspr-x86-arm...
+[    2s] [43/51] preinstalling nss-softokn-freebl-x86-arm...
+[    2s] [44/51] preinstalling nss-x86-arm...
+[    2s] [45/51] preinstalling popt-x86-arm...
+[    2s] [46/51] preinstalling rpm-libs-x86-arm...
+[    2s] [47/51] preinstalling sqlite-x86-arm...
+[    2s] [48/51] preinstalling xz-libs-x86-arm...
+[    2s] [49/51] preinstalling zlib-x86-arm...
+[    2s] [50/51] preinstalling bash-x86-arm...
+[    2s] [51/51] preinstalling rpm-x86-arm...
+[    2s] 
+[    2s] running rpm-x86-arm postinstall script
+[    3s] running rpm-libs-x86-arm postinstall script
+[    3s] running tizen-accelerator postinstall script
+[    3s] running bash-x86-arm postinstall script
+[    3s] initializing rpm db...
+[    6s] reordering...cycle: bash -> eglibc -> eglibc-common
+[    6s]   breaking dependency eglibc-common -> bash
+[    6s] cycle: bash -> eglibc -> eglibc-common -> coreutils
+[    6s]   breaking dependency eglibc-common -> coreutils
+[    6s] cycle: eglibc -> eglibc-common
+[    6s]   breaking dependency eglibc-common -> eglibc
+[    6s] cycle: eglibc -> eglibc-common -> findutils
+[    6s]   breaking dependency eglibc-common -> findutils
+[    6s] cycle: eglibc -> eglibc-common -> grep
+[    6s]   breaking dependency grep -> eglibc
+[    6s] cycle: eglibc -> eglibc-common -> grep -> libgcc
+[    6s]   breaking dependency grep -> libgcc
+[    6s] cycle: eglibc -> eglibc-common -> grep -> libpcre
+[    6s]   breaking dependency libpcre -> eglibc
+[    6s] cycle: eglibc -> eglibc-common -> grep -> libpcre -> libgcc
+[    6s]   breaking dependency libpcre -> libgcc
+[    6s] cycle: eglibc -> eglibc-common -> grep -> libpcre -> libstdc++
+[    6s]   breaking dependency libstdc++ -> eglibc
+[    6s] cycle: eglibc -> eglibc-common -> grep -> libpcre -> libstdc++ -> libgcc
+[    6s]   breaking dependency eglibc-common -> grep
+[    6s] cycle: eglibc -> eglibc-common -> libgcc
+[    6s]   breaking dependency eglibc -> eglibc-common
+[    6s] cycle: eglibc -> libgcc
+[    6s]   breaking dependency libgcc -> eglibc
+[    6s] cycle: dbus -> dbus-libs
+[    6s]   breaking dependency dbus -> dbus-libs
+[    6s] cycle: filesystem -> setup
+[    6s]   breaking dependency setup -> filesystem
+[    6s] cycle: ncurses-libs -> ncurses
+[    6s]   breaking dependency ncurses-libs -> ncurses
+[    6s] cycle: ncurses-libs -> ncurses-base -> ncurses
+[    6s]   breaking dependency ncurses-libs -> ncurses-base
+[    6s] cycle: pulseaudio-libs -> pulseaudio
+[    6s]   breaking dependency pulseaudio -> pulseaudio-libs
+[    6s] cycle: libremix -> libremix-devel
+[    6s]   breaking dependency libremix-devel -> libremix
+[    6s] cycle: pkgmgr-info -> pkgmgr-info-parser
+[    6s]   breaking dependency pkgmgr-info -> pkgmgr-info-parser
+[    6s] cycle: syspopup -> syspopup-caller
+[    6s]   breaking dependency syspopup -> syspopup-caller
+[    6s] cycle: perl -> perl-libs
+[    6s]   breaking dependency perl -> perl-libs
+[    6s] cycle: perl -> perl-IO-Compress-Zlib
+[    6s]   breaking dependency perl -> perl-IO-Compress-Zlib
+[    6s] cycle: perl -> perl-IO-Compress-Base
+[    6s]   breaking dependency perl -> perl-IO-Compress-Base
+[    6s] cycle: perl -> perl-Module-Pluggable
+[    6s]   breaking dependency perl -> perl-Module-Pluggable
+[    6s] cycle: perl -> perl-Pod-Simple
+[    6s]   breaking dependency perl -> perl-Pod-Simple
+[    6s] cycle: libsensord -> sensord
+[    6s]   breaking dependency libsensord -> sensord
+[    6s] cycle: nss -> nss-sysinit
+[    6s]   breaking dependency nss -> nss-sysinit
+[    6s] cycle: ppl-pwl -> ppl
+[    6s]   breaking dependency ppl -> ppl-pwl
+[    6s] cycle: rpm-libs -> rpm
+[    6s]   breaking dependency rpm-libs -> rpm
+[    6s] done
+[    7s] [1/532] installing build-info-0.3.4-1.30.1.slp
+[    7s] [2/532] installing capi-base-common-0.1.0-2.2.rinatoxx
+[    7s] [3/532] installing cloog-0.16.1-1.2.rinatoxx
+[    7s] [4/532] installing cross-armv7l-platformfile-0.0.1-1.1.slp
+[    8s] [5/532] installing hwdata-0.232-1.3.rinatoxx
+[    8s] [6/532] installing kernel-headers-2.6.36-1.1.slp
+[    8s] [7/532] installing kernel-headers-3.4-exynos3250-1.0.0-68.1.rinatoxx
+[    9s] [8/532] installing libX11-common-1.5.0-1.3.rinatoxx
+[    9s] [9/532] installing libaudiofilters-sec-0.1.15-2.2.rinatoxx
+[   10s] [10/532] installing libsavscodec-neon-0.1.11-3.1.rinatoxx
+[   10s] [11/532] installing sec-product-features-0.45-1.1.4.rinatoxx
+[   10s] [12/532] installing tizen-release-2.0.0-1.1.slp
+[   11s] [13/532] installing tzdata-2013h-1.1.slp
+[   12s] [14/532] installing uthash-devel-1.9.3-1.1.slp
+[   12s] [15/532] installing libgcc-4.6-2013.19.rinatoxx
+[   12s] [16/532] installing setup-0.1-5.1.rinatoxx
+[   13s] [17/532] installing filesystem-0.1-1.1.slp
+[   13s] warning: group lock does not exist - using root
+[   13s] [18/532] installing eglibc-2.13-1.18.rinatoxx
+[   14s] [19/532] installing libstdc++-4.6-2013.19.rinatoxx
+[   14s] [20/532] installing eglibc-common-2.13-1.18.rinatoxx
+[   15s] [21/532] installing iniparser-2.17-1.3.rinatoxx
+[   15s] [22/532] installing liblvve-nxp-3.18.6-1.3.rinatoxx
+[   16s] [23/532] installing libstdc++-devel-4.6-2013.19.rinatoxx
+[   17s] [24/532] installing libump-0.1.8-1.3.rinatoxx
+[   17s] [25/532] installing bash-4.1-3.1.slp
+[   17s] [26/532] installing bluetooth-sbc-codec-1.0-3.1.rinatoxx
+[   18s] [27/532] installing bzip2-libs-1.0.5-5.1.rinatoxx
+[   18s] [28/532] installing c-ares-1.10.0_4-2.1.rinatoxx
+[   18s] [29/532] installing check-0.9.4-1.3.rinatoxx
+[   19s] [30/532] installing chrpath-0.13-1.4.rinatoxx
+[   19s] [31/532] installing cpio-2.8-3.1.slp
+[   19s] [32/532] installing db4-4.8.30-1.5.rinatoxx
+[   20s] [33/532] installing diffutils-3.0-3.1.slp
+[   20s] [34/532] installing elfutils-libelf-0.152-2.2.rinatoxx
+[   20s] [35/532] installing expat-2.0.1-8.1.slp
+[   21s] [36/532] installing fdupes-1.40-42.1.slp
+[   21s] [37/532] installing findutils-4.2.31-2.1.rinatoxx
+[   21s] [38/532] installing freetype-2.4.9-1.3.rinatoxx
+[   22s] [39/532] installing fribidi-0.19.6-1.3.rinatoxx
+[   22s] [40/532] installing gdbm-1.8.3-1.1.slp
+[   23s] [41/532] installing libICE-1.0.8-1.3.rinatoxx
+[   23s] [42/532] installing libXau-1.0.7-1.3.rinatoxx
+[   23s] [43/532] installing libasound-1.0.24.1-3.1.rinatoxx
+[   24s] [44/532] installing libattr-2.4.44-8.1.rinatoxx
+[   24s] [45/532] installing libavutil-1.0.0-1.3.rinatoxx
+[   24s] [46/532] installing libdrm2-2.4.35-1.3.rinatoxx
+[   25s] [47/532] installing libexif-0.6.21-4.1.rinatoxx
+[   25s] [48/532] installing libffi-3.0.9-1.3.rinatoxx
+[   26s] [49/532] installing libflac-1.2.1+slp2+build04-1.3.rinatoxx
+[   26s] [50/532] installing libgomp-4.6-2013.19.rinatoxx
+[   26s] [51/532] installing libgpg-error-1.7-2.1.rinatoxx
+[   27s] [52/532] installing libidn-1.15-1.1.slp
+[   27s] [53/532] installing libjpeg-turbo-1.2.0-1.7.rinatoxx
+[   27s] [54/532] installing libkms1-2.4.35-1.3.rinatoxx
+[   28s] [55/532] installing liblua-5.1.4-6.1.slp
+[   28s] [56/532] installing libmm-ta-0.1.5-1.3.rinatoxx
+[   29s] [57/532] installing libogg-1.2.1-2.2.rinatoxx
+[   29s] [58/532] installing liboil-0.3.17-1.3.rinatoxx
+[   29s] [59/532] installing libtasn1-2.7-1.3.rinatoxx
+[   30s] [60/532] installing libtbm-1.0.9-2.1.rinatoxx
+[   30s] [61/532] installing libtool-ltdl-2.2.6b-3.1.rinatoxx
+[   30s] [62/532] installing libunwind-1.1-2.2.rinatoxx
+[   31s] [63/532] installing libusb-1.0.9-1.3.rinatoxx
+[   31s] [64/532] installing libuuid-2.20.2-5.1.rinatoxx
+[   31s] [65/532] installing lzo-2.03-1.1.slp
+[   32s] [66/532] installing m4-1.4.14-1.1.slp
+[   32s] [67/532] installing net-tools-1.60-87.1.slp
+[   32s] [68/532] installing nspr-4.9-1.20.rinatoxx
+[   33s] [69/532] installing nss-softokn-freebl-3.12.9-4.11.rinatoxx
+[   33s] [70/532] installing openssl-1.0.1f_2-1.11.rinatoxx
+[   34s] [71/532] installing patch-2.6-1.1.slp
+[   34s] [72/532] installing pixman-0.28.2-1.3.rinatoxx
+[   34s] [73/532] installing pkg-config-0.25-2.1.slp
+[   35s] [74/532] installing popt-1.16-3.1.slp
+[   35s] [75/532] installing readline-5.2-13.1.slp
+[   35s] [76/532] installing ruby-1.9.2-1.1.slp
+[   36s] [77/532] installing sed-4.1.5-2.1.slp
+[   37s] [78/532] installing smack-1.0slp2+s14-2.1.rinatoxx
+[   37s] [79/532] installing speex-1.2rc1-2.6.rinatoxx
+[   37s] [80/532] installing sqlite-3.7.13-3.1.rinatoxx
+[   38s] [81/532] installing system-tools-0.0.1-1.3.rinatoxx
+[   38s] [82/532] installing tar-1.17-4.1.slp
+[   38s] [83/532] installing xz-libs-5.0.3-2.1.rinatoxx
+[   39s] [84/532] installing zlib-1.2.5-3.12.rinatoxx
+[   39s] [85/532] installing gmp-4.2.1-1.1.rinatoxx
+[   39s] [86/532] installing gperf-3.0.4-1.1.slp
+[   40s] [87/532] installing libpcre-7.7-5.1.rinatoxx
+[   40s] [88/532] installing patchelf-0.5.svn20809-1.1.slp
+[   41s] [89/532] installing ncurses-libs-5.7-6.1.rinatoxx
+[   41s] [90/532] installing build-compare-2009.10.14-26.21.rinatoxx
+[   41s] [91/532] installing bzip2-devel-1.0.5-5.1.rinatoxx
+[   42s] [92/532] installing db4-devel-4.8.30-1.5.rinatoxx
+[   42s] [93/532] installing elfutils-libelf-devel-0.152-2.2.rinatoxx
+[   42s] [94/532] installing expat-devel-2.0.1-8.1.slp
+[   43s] [95/532] installing gmp-devel-4.2.1-1.1.rinatoxx
+[   43s] [96/532] installing libattr-devel-2.4.44-8.1.rinatoxx
+[   43s] [97/532] installing libleveldb-1.1_13-2.1.rinatoxx
+[   44s] [98/532] installing libpthread-stubs-0.3-1.3.rinatoxx
+[   44s] [99/532] installing qemu-linux-user-arm-1.4.0-4.4.3.rinatoxx
+[   44s] [100/532] installing vconf-internal-keys-devel-0.0.129-1.3.rinatoxx
+[   45s] [101/532] installing which-0.1-1.4.rinatoxx
+[   45s] [102/532] installing xorg-x11-proto-core-7.0.25-1.3.rinatoxx
+[   45s] [103/532] installing xorg-x11-proto-damage-1.2.1-1.3.rinatoxx
+[   46s] [104/532] installing xorg-x11-proto-dri2-2.8-1.3.rinatoxx
+[   46s] [105/532] installing xorg-x11-proto-kb-1.0.6-1.3.rinatoxx
+[   46s] [106/532] installing xorg-x11-proto-renderproto-0.11.1-1.3.rinatoxx
+[   47s] [107/532] installing xorg-x11-proto-video-2.3.1-1.3.rinatoxx
+[   47s] [108/532] installing xorg-x11-proto-xext-7.2.1-1.3.rinatoxx
+[   47s] [109/532] installing xorg-x11-xutils-dev-7.7-1.3.rinatoxx
+[   48s] [110/532] installing bluetooth-sbc-codec-devel-1.0-3.1.rinatoxx
+[   48s] [111/532] installing capi-base-common-devel-0.1.0-2.2.rinatoxx
+[   48s] [112/532] installing check-devel-0.9.4-1.3.rinatoxx
+[   48s] [113/532] installing eglibc-headers-2.13-1.18.rinatoxx
+[   49s] [114/532] installing fribidi-devel-0.19.6-1.3.rinatoxx
+[   50s] [115/532] installing iniparser-devel-2.17-1.3.rinatoxx
+[   50s] [116/532] installing libasound-devel-1.0.24.1-3.1.rinatoxx
+[   51s] [117/532] installing libaudiofilters-sec-devel-0.1.15-2.2.rinatoxx
+[   51s] [118/532] installing libavutil-devel-1.0.0-1.3.rinatoxx
+[   51s] [119/532] installing libcap-2.21-2.1.rinatoxx
+[   52s] [120/532] installing libexif-devel-0.6.21-4.1.rinatoxx
+[   52s] [121/532] installing libffi-devel-3.0.9-1.3.rinatoxx
+[   52s] [122/532] installing libgpg-error-devel-1.7-2.1.rinatoxx
+[   53s] [123/532] installing libjpeg-turbo-devel-1.2.0-1.7.rinatoxx
+[   53s] [124/532] installing liblua-devel-5.1.4-6.1.slp
+[   53s] [125/532] installing liblvve-nxp-devel-3.18.6-1.3.rinatoxx
+[   54s] [126/532] installing libmm-ta-devel-0.1.5-1.3.rinatoxx
+[   54s] [127/532] installing libogg-devel-1.2.1-2.2.rinatoxx
+[   54s] [128/532] installing liboil-devel-0.3.17-1.3.rinatoxx
+[   54s] [129/532] installing libsavscodec-neon-devel-0.1.11-3.1.rinatoxx
+[   55s] [130/532] installing libtasn1-devel-2.7-1.3.rinatoxx
+[   55s] [131/532] installing libtool-ltdl-devel-2.2.6b-3.1.rinatoxx
+[   56s] [132/532] installing libuuid-devel-2.20.2-5.1.rinatoxx
+[   56s] [133/532] installing openssl-devel-1.0.1f_2-1.11.rinatoxx
+[   56s] [134/532] installing pixman-devel-0.28.2-1.3.rinatoxx
+[   57s] [135/532] installing popt-devel-1.16-3.1.slp
+[   57s] [136/532] installing smack-devel-1.0slp2+s14-2.1.rinatoxx
+[   57s] [137/532] installing speex-devel-1.2rc1-2.6.rinatoxx
+[   58s] [138/532] installing sqlite-devel-3.7.13-3.1.rinatoxx
+[   58s] [139/532] installing unzip-6.0-10.5.rinatoxx
+[   58s] [140/532] installing xz-devel-5.0.3-2.1.rinatoxx
+[   59s] [141/532] installing zlib-devel-1.2.5-3.12.rinatoxx
+[   59s] [142/532] installing bison-2.4.1-1.1.slp
+[   59s] [143/532] installing flex-2.5.35-3.1.slp
+[   60s] [144/532] installing grep-2.5.1a-62.1.slp
+[   60s] [145/532] installing iptables-1.4.9.3_2-1.3.rinatoxx
+[   61s] [146/532] installing libacl-2.2.49-2.1.rinatoxx
+[   61s] [147/532] installing libavcodec-1.0.0-1.3.rinatoxx
+[   62s] [148/532] installing libdrm-devel-2.4.35-1.3.rinatoxx
+[   62s] [149/532] installing libfile-5.04-4.1.rinatoxx
+[   63s] [150/532] installing libgcrypt-1.4.4-1.3.rinatoxx
+[   63s] [151/532] installing libiri-1.6-1.3.rinatoxx
+[   63s] [152/532] installing libjson-0.9.3-2.2.rinatoxx
+[   64s] [153/532] installing libpcre-devel-7.7-5.1.rinatoxx
+[   64s] [154/532] installing libpng-1.2.50-1.3.rinatoxx
+[   64s] [155/532] installing libpython-2.7.1-4.17.rinatoxx
+[   65s] [156/532] installing libtheora-1.1.1-2.2.rinatoxx
+[   65s] [157/532] installing libusb-compat-0.1.4-1.3.rinatoxx
+[   66s] [158/532] installing libvorbis-1.2.3-2.2.rinatoxx
+[   66s] [159/532] installing libxcb-1.8.1-1.3.rinatoxx
+[   66s] [160/532] installing libxml2-2.7.8-8.1.slp
+[   67s] [161/532] installing lzo-minilzo-2.03-1.1.slp
+[   67s] [162/532] installing lzop-1.03-1.20.rinatoxx
+[   68s] [163/532] installing make-3.82-154.154.1.slp
+[   68s] [164/532] installing mpfr-3.0.0-2.2.rinatoxx
+[   68s] [165/532] installing ncurses-5.7-6.1.rinatoxx
+[   69s] [166/532] installing nettle-2.1_2.2-1.4.rinatoxx
+[   69s] [167/532] installing nspr-devel-4.9-1.20.rinatoxx
+[   69s] [168/532] installing pcre-7.7-5.1.rinatoxx
+[   70s] [169/532] installing psmisc-22.20-2.1.slp
+[   70s] [170/532] installing bzip2-1.0.5-5.1.rinatoxx
+[   70s] [171/532] installing gettext-runtime-0.18.1.1-2.1.slp
+[   71s] [172/532] installing glib2-2.32.3-1.5.rinatoxx
+[   71s] [173/532] installing kmod-libs-14-2.2.rinatoxx
+[   72s] [174/532] installing libSM-1.2.1-1.3.rinatoxx
+[   72s] [175/532] installing libblkid-2.20.2-5.1.rinatoxx
+[   72s] [176/532] installing libicu-51-7.1.rinatoxx
+[   74s] [177/532] installing smack-utils-1.0slp2+s14-2.1.rinatoxx
+[   74s] [178/532] installing spindly-0.0.7-2.1.rinatoxx
+[   75s] [179/532] installing xz-5.0.3-2.1.rinatoxx
+[   75s] [180/532] installing binutils-2.22-1.1.slp
+[   76s] [181/532] installing elfutils-libs-0.152-2.2.rinatoxx
+[   76s] [182/532] installing libflac-devel-1.2.1+slp2+build04-1.3.rinatoxx
+[   77s] [183/532] installing ppl-0.11.2-1.2.rinatoxx
+[   77s] [184/532] installing nss-3.12.9-4.11.rinatoxx
+[   78s] [185/532] installing perl-5.12.1-61.24.rinatoxx
+[   80s] [186/532] installing libcap-devel-2.21-2.1.rinatoxx
+[   80s] [187/532] installing libfile-devel-5.04-4.1.rinatoxx
+[   80s] [188/532] installing mpfr-devel-3.0.0-2.2.rinatoxx
+[   81s] [189/532] installing ncurses-base-5.7-6.1.rinatoxx
+[   82s] [190/532] installing nettle-devel-2.1_2.2-1.4.rinatoxx
+[   82s] [191/532] installing perl-HTML-Tagset-3.20-8.1.slp
+[   82s] [192/532] installing perl-IO-Compress-Base-2.008-61.24.rinatoxx
+[   83s] [193/532] installing perl-Module-Pluggable-3.60-61.24.rinatoxx
+[   83s] [194/532] installing perl-Pod-Escapes-1.04-61.24.rinatoxx
+[   83s] [195/532] installing perl-TimeDate-1.20-1.1.slp
+[   83s] [196/532] installing perl-URI-1.54-1.1.slp
+[   84s] [197/532] installing binutils-devel-2.22-1.1.slp
+[   84s] [198/532] installing eglibc-devel-2.13-1.18.rinatoxx
+[   85s] [199/532] installing elfutils-devel-0.152-2.2.rinatoxx
+[   85s] [200/532] installing iptables-devel-1.4.9.3_2-1.3.rinatoxx
+[   85s] [201/532] installing libacl-devel-2.2.49-2.1.rinatoxx
+[   86s] [202/532] installing libgcrypt-devel-1.4.4-1.3.rinatoxx
+[   86s] [203/532] installing libicu-devel-51-7.1.rinatoxx
+[   86s] [204/532] installing libjson-devel-0.9.3-2.2.rinatoxx
+[   87s] [205/532] installing smack-privilege-config-1.0.4.SLP-2.1.rinatoxx
+[   87s] api_feature_loader not present
+[   87s] [206/532] installing svi-data-0.1.3-13.1.rinatoxx
+[   88s] [207/532] installing xorg-x11-proto-fixes-5.0-1.3.rinatoxx
+[   88s] [208/532] installing file-5.04-4.1.rinatoxx
+[   88s] [209/532] installing kmod-14-2.2.rinatoxx
+[   89s] [210/532] installing libICE-devel-1.0.8-1.3.rinatoxx
+[   89s] [211/532] installing libXau-devel-1.0.7-1.3.rinatoxx
+[   89s] [212/532] installing libavcodec-devel-1.0.0-1.3.rinatoxx
+[   90s] [213/532] installing libblkid-devel-2.20.2-5.1.rinatoxx
+[   90s] [214/532] installing libtheora-devel-1.1.1-2.2.rinatoxx
+[   91s] [215/532] installing libusb-compat-devel-0.1.4-1.3.rinatoxx
+[   91s] [216/532] installing libvorbis-devel-1.2.3-2.2.rinatoxx
+[   92s] [217/532] installing libxslt-1.1.16-1.1.rinatoxx
+[   92s] [218/532] installing lzo-devel-2.03-1.1.slp
+[   93s] [219/532] installing perl-Compress-Raw-Zlib-2.008-61.24.rinatoxx
+[   93s] [220/532] installing perl-libs-5.12.1-61.24.rinatoxx
+[   94s] [221/532] installing xcb-util-0.3.8-1.8.rinatoxx
+[   95s] [222/532] installing coreutils-6.9-10.2.rinatoxx
+[   96s] [223/532] installing freetype-devel-2.4.9-1.3.rinatoxx
+[   96s] [224/532] installing libX11-1.5.0-1.3.rinatoxx
+[   97s] [225/532] installing libdlog-0.4.1-6.1.rinatoxx
+[   97s] [226/532] installing libmount-2.20.2-5.1.rinatoxx
+[   98s] [227/532] installing libpng-devel-1.2.50-1.3.rinatoxx
+[   98s] [228/532] installing libtbm-devel-1.0.9-2.1.rinatoxx
+[   99s] [229/532] installing mpc-0.9-2.2.rinatoxx
+[   99s] [230/532] installing ncurses-devel-5.7-6.1.rinatoxx
+[  100s] [231/532] installing nss-devel-3.12.9-4.11.rinatoxx
+[  100s] [232/532] installing ppl-pwl-0.11.2-1.2.rinatoxx
+[  101s] [233/532] installing spindly-devel-0.0.7-2.1.rinatoxx
+[  101s] [234/532] installing xz-lzma-compat-5.0.3-2.1.rinatoxx
+[  101s] [235/532] installing cloog-ppl-0.16.1-1.2.rinatoxx
+[  102s] [236/532] installing elfutils-0.152-2.2.rinatoxx
+[  102s] [237/532] installing gnutls-2.12.20_2.4.1-1.4.rinatoxx
+[  103s] [238/532] installing nss-sysinit-3.12.9-4.11.rinatoxx
+[  104s] [239/532] installing python-base-2.7.1-4.17.rinatoxx
+[  105s] [240/532] installing usbutils-0.86-1.3.rinatoxx
+[  105s] [241/532] installing libsndfile-1.0.25-1.3.rinatoxx
+[  106s] [242/532] installing libcurl-7.28.1_12-2.2.rinatoxx
+[  106s] [243/532] installing libarchive-2.8.3-1.1.rinatoxx
+[  107s] [244/532] installing rpm-libs-4.9.1-4.3.7.1.rinatoxx
+[  107s] [245/532] installing eglibc-static-2.13-1.18.rinatoxx
+[  108s] [246/532] installing libdlog-devel-0.4.1-6.1.rinatoxx
+[  109s] [247/532] installing libsndfile-devel-1.0.25-1.3.rinatoxx
+[  109s] [248/532] installing perl-Pod-Simple-3.07-61.24.rinatoxx
+[  109s] [249/532] installing readline-devel-5.2-13.1.slp
+[  110s] [250/532] installing tizen-accelerator-1.0.1-1.1.slp
+[  110s] [251/532] installing alsa-scenario-0.2.7-2.1.rinatoxx
+[  111s] [252/532] installing eina-1.7.1+svn.77445+build22-1.13.rinatoxx
+[  111s] [253/532] installing giflib-4.1.6-1.8.rinatoxx
+[  112s] [254/532] installing kmod-devel-14-2.2.rinatoxx
+[  112s] [255/532] installing libXcomposite-0.4.3-1.3.rinatoxx
+[  113s] [256/532] installing libXdamage-1.1.3-1.3.rinatoxx
+[  113s] [257/532] installing libXext-1.3.1-1.3.rinatoxx
+[  114s] [258/532] installing libXfixes-5.0-1.3.rinatoxx
+[  114s] [259/532] installing libXrender-0.9.7-1.3.rinatoxx
+[  115s] [260/532] installing libidn-devel-1.15-1.1.slp
+[  115s] [261/532] installing libmm-common-0.3.1-1.3.rinatoxx
+[  116s] [262/532] installing libtremolo-0.0.9-2.1.rinatoxx
+[  116s] [263/532] installing mpc-devel-0.9-2.2.rinatoxx
+[  116s] [264/532] installing perl-IO-Compress-Zlib-2.008-61.24.rinatoxx
+[  117s] [265/532] installing bundle-0.1.32-2.2.rinatoxx
+[  117s] [266/532] installing gawk-3.1.5-1.1.slp
+[  118s] [267/532] installing glib-networking-2.32.3_1.5-1.3.rinatoxx
+[  118s] [268/532] installing gzip-1.3.12-1.1.rinatoxx
+[  118s] [269/532] installing libSM-devel-1.2.1-1.3.rinatoxx
+[  119s] [270/532] installing libcamsrcjpegenc-0.1.9-2.2.rinatoxx
+[  119s] [271/532] installing libxcb-devel-1.8.1-1.3.rinatoxx
+[  120s] [272/532] installing pam-1.1.5-2.1.slp
+[  120s] [273/532] installing perl-HTML-Parser-3.65-1.1.slp
+[  121s] [274/532] installing python-xml-2.7.1-4.17.rinatoxx
+[  121s] [275/532] installing xdgmime-0.0.12-1.3.rinatoxx
+[  122s] [276/532] installing autoconf-2.68-1.1.slp
+[  122s] [277/532] installing build-2011.01.10a-1.3.rinatoxx
+[  123s] [278/532] installing capi-system-info-0.2.0-1.3.rinatoxx
+[  123s] [279/532] installing gettext-tools-0.18.1.1-2.1.slp
+[  125s] [280/532] installing gnutls-devel-2.12.20_2.4.1-1.4.rinatoxx
+[  126s] [281/532] installing gstreamer-0.10.36-1.3.rinatoxx
+[  127s] [282/532] installing libXt-1.1.2-1.3.rinatoxx
+[  127s] [283/532] installing libmm-utility-0.7-1.3.rinatoxx
+[  128s] [284/532] installing python-devel-2.7.1-4.17.rinatoxx
+[  129s] [285/532] installing rpm-4.9.1-4.3.7.1.rinatoxx
+[  130s] [286/532] installing cpp-4.6-2013.19.rinatoxx
+[  131s] [287/532] installing libslp-db-util-0.1.5-2.3.rinatoxx
+[  132s] [288/532] installing sys-assert-0.3.2-1.3.rinatoxx
+[  132s] [289/532] installing dbus-1.6.4-2.2.rinatoxx
+[  133s] [290/532] installing util-linux-2.20.2-5.1.rinatoxx
+[  133s] [291/532] installing cmake-2.8.5-1.1.1.rinatoxx
+[  135s] [292/532] installing fontconfig-2.9.0-1.3.rinatoxx
+[  137s] /opt/var/cache/fontconfig/*: No such file or directory
+[  137s] [293/532] installing libsoup2.4-2.38.1_0.4.29-1.4.rinatoxx
+[  138s] [294/532] installing glib2-devel-2.32.3-1.5.rinatoxx
+[  139s] [295/532] installing libprivilege-control-0.0.66.SLP-3.1.rinatoxx
+[  141s] Applying sql update files on db
+[  141s] /opt/dbspace/.rules-db.db3
+[  141s] Creating database from scratch
+[  141s] Loading rules from directory...
+[  141s] Loading permission: WRT  
+[  141s] Loading permission: early  
+[  141s] Loading permission: org.tizen.privilege.alarm  
+[  141s] Loading permission: org.tizen.privilege.application.info  
+[  141s] Loading permission: org.tizen.privilege.application.launch  
+[  141s] Loading permission: org.tizen.privilege.appmanager.certificate  
+[  141s] Loading permission: org.tizen.privilege.appmanager.kill  
+[  141s] Loading permission: org.tizen.privilege.camera  
+[  141s] Loading permission: org.tizen.privilege.content.read  
+[  141s] Loading permission: org.tizen.privilege.content.write  
+[  141s] Loading permission: org.tizen.privilege.filesystem.read  
+[  141s] Loading permission: org.tizen.privilege.filesystem.write  
+[  141s] Loading permission: org.tizen.privilege.mediacapture  
+[  141s] Loading permission: org.tizen.privilege.package.info  
+[  141s] Loading permission: org.tizen.privilege.packagemanager.install  
+[  141s] Loading permission: org.tizen.privilege.power  
+[  141s] Loading permission: org.tizen.privilege.system  
+[  141s] Loading permission: org.tizen.privilege.unlimitedstorage  
+[  141s] Done.
+[  141s] Loading additional rules from file...
+[  141s] Loading rule: contacts-service ~GROUP_PATH~ rx
+[  141s] Loading rule: contacts-service ~PUBLIC_PATH~ rx
+[  141s] Loading rule: obexd ~GROUP_PATH~ rx
+[  141s] Loading rule: obexd ~PUBLIC_PATH~ rx
+[  141s] Loading rule: bt_share ~GROUP_PATH~ rx
+[  141s] Loading rule: bt_share ~PUBLIC_PATH~ rx
+[  141s] Loading rule: ~NPRUNTIME_PATH~ system::homedir rxat
+[  141s] Loading rule: ~NPRUNTIME_PATH~ xorg rw
+[  141s] Loading rule: ~NPRUNTIME_PATH~ crash-worker rwxa
+[  141s] Loading rule: ~NPRUNTIME_PATH~ sys-assert::core rwxat
+[  141s] Loading rule: ~NPRUNTIME_PATH~ syslogd rw
+[  141s] Done.
+[  141s] [296/532] installing python-2.7.1-1.5.rinatoxx
+[  141s] [297/532] installing bundle-devel-0.1.32-2.2.rinatoxx
+[  142s] [298/532] installing libcamsrcjpegenc-devel-0.1.9-2.2.rinatoxx
+[  142s] [299/532] installing libmm-log-devel-0.1.6-1.3.rinatoxx
+[  143s] [300/532] installing libmm-utility-devel-0.7-1.3.rinatoxx
+[  143s] [301/532] installing xdgmime-devel-0.0.12-1.3.rinatoxx
+[  143s] [302/532] installing alsa-scenario-devel-0.2.7-2.1.rinatoxx
+[  144s] [303/532] installing automake-1.11.1-3.1.slp
+[  144s] [304/532] installing bzip2-libs-x86-arm-1.0.5-8.3.rinatoxx
+[  145s] [305/532] installing capi-system-info-devel-0.2.0-1.3.rinatoxx
+[  145s] [306/532] installing dbus-libs-1.6.4-2.2.rinatoxx
+[  145s] [307/532] installing eglibc-x86-arm-2.13-8.9.rinatoxx
+[  146s] [308/532] installing eina-devel-1.7.1+svn.77445+build22-1.13.rinatoxx
+[  147s] [309/532] installing elfutils-libelf-x86-arm-0.152-8.4.rinatoxx
+[  147s] [310/532] installing elfutils-libs-x86-arm-0.152-8.19.rinatoxx
+[  148s] [311/532] installing embryo-1.6.0+svn.76491slp2+build04-1.3.rinatoxx
+[  148s] [312/532] installing expat-x86-arm-2.0.1-8.3.rinatoxx
+[  149s] [313/532] installing fontconfig-devel-2.9.0-1.3.rinatoxx
+[  149s] [314/532] installing gmp-x86-arm-4.2.1-8.6.rinatoxx
+[  150s] [315/532] installing libacl-x86-arm-2.2.49-8.2.rinatoxx
+[  150s] [316/532] installing libarchive-x86-arm-2.8.3-8.3.rinatoxx
+[  151s] [317/532] installing libattr-x86-arm-2.4.44-8.3.rinatoxx
+[  151s] [318/532] installing libcap-x86-arm-2.21-8.2.rinatoxx
+[  152s] [319/532] installing libfile-x86-arm-5.04-8.3.rinatoxx
+[  152s] [320/532] installing libgcc-x86-arm-4.6-8.5.rinatoxx
+[  153s] [321/532] installing liblua-x86-arm-5.1.4-8.3.rinatoxx
+[  154s] [322/532] installing libprivilege-control-devel-0.0.66.SLP-3.1.rinatoxx
+[  154s] [323/532] installing libpython-x86-arm-2.7.1-1.19.rinatoxx
+[  155s] [324/532] installing libstdc++-x86-arm-4.6-8.5.rinatoxx
+[  156s] [325/532] installing libxml2-x86-arm-2.7.8-8.3.rinatoxx
+[  156s] [326/532] installing mpc-x86-arm-0.9-8.5.rinatoxx
+[  157s] [327/532] installing mpfr-x86-arm-3.0.0-8.5.rinatoxx
+[  157s] [328/532] installing ncurses-libs-x86-arm-5.7-8.3.rinatoxx
+[  158s] [329/532] installing nspr-x86-arm-4.9-8.21.rinatoxx
+[  158s] [330/532] installing nss-softokn-freebl-x86-arm-3.12.9-8.17.rinatoxx
+[  159s] [331/532] installing nss-x86-arm-3.12.9-8.17.rinatoxx
+[  160s] [332/532] installing openssl-x86-arm-1.0.1f_2-8.18.rinatoxx
+[  160s] [333/532] installing pam-devel-1.1.5-2.1.slp
+[  161s] [334/532] installing perl-libs-x86-arm-5.12.1-1.17.rinatoxx
+[  161s] [335/532] installing popt-x86-arm-1.16-8.3.rinatoxx
+[  162s] [336/532] installing ppl-pwl-x86-arm-0.11.2-8.5.rinatoxx
+[  162s] [337/532] installing python-x86-arm-2.7.1-1.8.rinatoxx
+[  164s] [338/532] installing python-xml-x86-arm-2.7.1-1.3.rinatoxx
+[  165s] [339/532] installing rpm-libs-x86-arm-4.9.1-8.3.rinatoxx
+[  165s] [340/532] installing sqlite-x86-arm-3.7.13-8.2.rinatoxx
+[  166s] [341/532] installing xcb-util-devel-0.3.8-1.8.rinatoxx
+[  166s] [342/532] installing xz-libs-x86-arm-5.0.3-8.2.rinatoxx
+[  167s] [343/532] installing zlib-x86-arm-1.2.5-8.2.rinatoxx
+[  167s] [344/532] installing ecore-1.7.1+svn.77580+build69b04-2.2.rinatoxx
+[  168s] [345/532] installing gstreamer-tools-0.10.36-1.3.rinatoxx
+[  168s] [346/532] installing libXgesture-0.1.1-1.3.rinatoxx
+[  169s] [347/532] installing libXi-1.6.1-1.3.rinatoxx
+[  169s] [348/532] installing libXtst-1.2.0-1.3.rinatoxx
+[  170s] [349/532] installing libXv-1.0.7-1.3.rinatoxx
+[  170s] [350/532] installing libcurl-devel-7.28.1_12-2.2.rinatoxx
+[  171s] [351/532] installing libdri2-0.1.0-1.3.rinatoxx
+[  171s] [352/532] installing perl-Compress-Zlib-2.008-61.24.rinatoxx
+[  171s] [353/532] installing eet-1.7.1+svn.77495+build02-1.3.rinatoxx
+[  172s] [354/532] installing gssdp-0.8.2_2-1.3.rinatoxx
+[  172s] [355/532] installing libX11-devel-1.5.0-1.3.rinatoxx
+[  173s] [356/532] installing libXrandr-1.4.0-1.3.rinatoxx
+[  173s] [357/532] installing libremix-devel-0.2.4+build13b01-1.3.rinatoxx
+[  174s] [358/532] installing libxml2-devel-2.7.8-8.1.slp
+[  174s] [359/532] installing libXft-2.3.1-1.3.rinatoxx
+[  174s] [360/532] installing librua-0.1.5-2.2.rinatoxx
+[  175s] persist
+[  175s] [361/532] installing libslp-db-util-devel-0.1.5-2.3.rinatoxx
+[  176s] [362/532] installing gcc-4.6-2013.19.rinatoxx
+[  177s] [363/532] installing rpm-build-4.9.1-4.3.7.1.rinatoxx
+[  177s] [364/532] installing embryo-devel-1.6.0+svn.76491slp2+build04-1.3.rinatoxx
+[  178s] [365/532] installing dbus-devel-1.6.4-2.2.rinatoxx
+[  178s] [366/532] installing ecore-imf-1.7.1+svn.77580+build69b04-2.2.rinatoxx
+[  178s] [367/532] installing ecore-input-1.7.1+svn.77580+build69b04-2.2.rinatoxx
+[  179s] [368/532] installing gssdp-devel-0.8.2_2-1.3.rinatoxx
+[  179s] [369/532] installing bash-x86-arm-4.1-8.5.rinatoxx
+[  180s] [370/532] installing dbus-glib-0.100-1.3.rinatoxx
+[  180s] [371/532] installing eet-devel-1.7.1+svn.77495+build02-1.3.rinatoxx
+[  181s] [372/532] installing eet-tools-1.7.1+svn.77495+build02-1.3.rinatoxx
+[  181s] [373/532] installing fdupes-x86-arm-1.40-8.3.rinatoxx
+[  181s] [374/532] installing findutils-x86-arm-4.2.31-8.2.rinatoxx
+[  182s] [375/532] installing gawk-x86-arm-3.1.5-8.3.rinatoxx
+[  183s] /bin/mv: cannot stat `/bin/pgawk-3.1.5': No such file or directory
+[  183s] /bin/mv: cannot stat `/bin/pgawk': No such file or directory
+[  183s] [376/532] installing gstreamer-devel-0.10.36-1.3.rinatoxx
+[  183s] [377/532] installing gzip-x86-arm-1.3.12-8.4.rinatoxx
+[  184s] [378/532] installing libmm-common-devel-0.3.1-1.3.rinatoxx
+[  184s] [379/532] installing libremix-0.2.4+build13b01-1.3.rinatoxx
+[  184s] [380/532] installing libsoup2.4-devel-2.38.1_0.4.29-1.4.rinatoxx
+[  185s] [381/532] installing libtool-2.2.6b-3.1.rinatoxx
+[  186s] [382/532] installing libxslt-devel-1.1.16-1.1.rinatoxx
+[  186s] [383/532] installing make-x86-arm-3.82-8.3.rinatoxx
+[  187s] [384/532] installing perl-libwww-perl-5.836-1.1.slp
+[  187s] [385/532] installing pkg-config-x86-arm-0.25-8.3.rinatoxx
+[  188s] [386/532] installing ruby-x86-arm-1.9.2-1.3.rinatoxx
+[  189s] [387/532] installing sed-x86-arm-4.1.5-8.3.rinatoxx
+[  189s] [388/532] installing tar-x86-arm-1.17-8.3.rinatoxx
+[  190s] [389/532] installing bzip2-x86-arm-1.0.5-8.3.rinatoxx
+[  190s] [390/532] installing diffutils-x86-arm-3.0-8.3.rinatoxx
+[  191s] [391/532] installing ecore-con-1.7.1+svn.77580+build69b04-2.2.rinatoxx
+[  191s] [392/532] installing libXext-devel-1.3.1-1.3.rinatoxx
+[  192s] [393/532] installing libXfixes-devel-5.0-1.3.rinatoxx
+[  192s] [394/532] installing libXrender-devel-0.9.7-1.3.rinatoxx
+[  193s] [395/532] installing patch-x86-arm-2.6-8.3.rinatoxx
+[  193s] [396/532] installing perl-x86-arm-5.12.1-1.17.rinatoxx
+[  196s] [397/532] installing python-base-x86-arm-2.7.1-1.2.rinatoxx
+[  198s] [398/532] installing coreutils-x86-arm-6.9-8.3.rinatoxx
+[  200s] [399/532] installing file-x86-arm-5.04-8.2.rinatoxx
+[  201s] [400/532] installing libXt-devel-1.1.2-1.3.rinatoxx
+[  201s] [401/532] installing systemd-libs-208-2.2.rinatoxx
+[  202s] [402/532] installing bluez-4.101_39-5.1.rinatoxx
+[  202s] [403/532] installing libslp-utilx-0.1.32-1.3.rinatoxx
+[  203s] [404/532] installing native-buffer-1.1.0-1.3.rinatoxx
+[  203s] [405/532] installing ppl-x86-arm-0.11.2-8.5.rinatoxx
+[  205s] [406/532] installing elfutils-x86-arm-0.152-8.19.rinatoxx
+[  205s] [407/532] installing gcc-c++-4.6-2013.19.rinatoxx
+[  206s] [408/532] installing cmake-x86-arm-2.8.5-8.3.rinatoxx
+[  207s] [409/532] installing rpm-x86-arm-4.9.1-8.3.rinatoxx
+[  208s] /bin/rpm.orig-arm already present - skipping.
+[  208s] /usr/bin/rpm2cpio.orig-arm already present - skipping.
+[  208s] /usr/bin/rpmdb.orig-arm already present - skipping.
+[  208s] /usr/bin/rpmquery.orig-arm already present - skipping.
+[  208s] /usr/bin/rpmsign.orig-arm already present - skipping.
+[  208s] /usr/bin/rpmverify.orig-arm already present - skipping.
+[  208s] [410/532] installing rpm-build-x86-arm-4.9.1-8.4.rinatoxx
+[  208s] [411/532] installing libslp-utilx-devel-0.1.32-1.3.rinatoxx
+[  209s] [412/532] installing ecore-fb-1.7.1+svn.77580+build69b04-2.2.rinatoxx
+[  209s] [413/532] installing ecore-file-1.7.1+svn.77580+build69b04-2.2.rinatoxx
+[  210s] [414/532] installing ecore-ipc-1.7.1+svn.77580+build69b04-2.2.rinatoxx
+[  210s] [415/532] installing libbluetooth3-4.101_39-5.1.rinatoxx
+[  211s] [416/532] installing libdri2-devel-0.1.0-1.3.rinatoxx
+[  211s] [417/532] installing libcom-core-0.5.8-1.3.rinatoxx
+[  211s] [418/532] installing libXdamage-devel-1.1.3-1.3.rinatoxx
+[  212s] [419/532] installing libXft-devel-2.3.1-1.3.rinatoxx
+[  212s] [420/532] installing libXv-devel-1.0.7-1.3.rinatoxx
+[  213s] [421/532] installing perl-XML-Parser-2.36-3.1.slp
+[  213s] [422/532] installing libmedia-utils-0.2.88-2.3.rinatoxx
+[  214s] [423/532] installing cloog-ppl-x86-arm-0.16.1-8.5.rinatoxx
+[  214s] mv: cannot stat `/usr/bin/libcloog-ppl.so.1': No such file or directory
+[  214s] [424/532] installing cross-armv7l-gcc-accel-armv7l-4.6-2013.40.rinatoxx
+[  217s] "GCCVER: 4.6 GCCVER_NEW: 4.6 "
+[  217s] GCC and GCC-accel versions match. Enabling cross-compiler.
+[  217s] cp: cannot stat `/emul/ia32-linux/usr/bin/c89': No such file or directory
+[  217s] cp: cannot stat `/emul/ia32-linux/usr/bin/c99': No such file or directory
+[  217s] mv: cannot stat `/usr/bin/gcc-ar': No such file or directory
+[  217s] mv: cannot stat `/usr/bin/gcc-nm': No such file or directory
+[  217s] mv: cannot stat `/usr/bin/gcc-ranlib': No such file or directory
+[  217s] [425/532] installing dbus-glib-devel-0.100-1.3.rinatoxx
+[  218s] [426/532] installing opengl-es-mali400mp-0.1.22-4.2.rinatoxx
+[  219s] [427/532] installing systemd-208-2.2.rinatoxx
+[  220s] [428/532] installing ecore-x-1.7.1+svn.77580+build69b04-2.2.rinatoxx
+[  220s] [429/532] installing opengl-es-0.1.4-2.1.rinatoxx
+[  220s] [430/532] installing libmedia-utils-devel-0.2.88-2.3.rinatoxx
+[  221s] [431/532] installing opengl-es-mali400mp-devel-0.1.22-4.2.rinatoxx
+[  221s] [432/532] installing systemd-devel-208-2.2.rinatoxx
+[  222s] [433/532] installing libbluetooth-devel-4.101_39-5.1.rinatoxx
+[  222s] [434/532] installing perl-XML-Parser-x86-arm-2.36-1.3.rinatoxx
+[  223s] [435/532] installing cross-armv7l-binutils-accel-armv7l-2.22-1.5.rinatoxx
+[  224s] mv: cannot stat `/usr/bin/gprov': No such file or directory
+[  224s] [436/532] installing efreet-1.7.1+svn.77412+build04b01-1.3.rinatoxx
+[  225s] [437/532] installing intltool-0.41.0-1.1.slp
+[  226s] [438/532] installing native-buffer-devel-1.1.0-1.3.rinatoxx
+[  226s] [439/532] installing vconf-0.2.76-2.1.rinatoxx
+[  227s] Running in chroot, ignoring request.
+[  227s] [440/532] installing security-server-0.0.118-1.3.rinatoxx
+[  227s] Running in chroot, ignoring request.
+[  227s] Running in chroot, ignoring request.
+[  227s] [441/532] installing cairo-1.12.14-1.3.rinatoxx
+[  228s] [442/532] installing vconf-keys-devel-0.2.76-2.1.rinatoxx
+[  228s] [443/532] installing opengl-es-devel-0.1.4-2.1.rinatoxx
+[  228s] [444/532] installing csc-feature-1.0.15-3.2.rinatoxx
+[  229s] [445/532] installing libsecurity-server-client-0.0.118-1.3.rinatoxx
+[  229s] [446/532] installing audio-session-manager-0.3.13-1.4.rinatoxx
+[  230s] [447/532] installing harfbuzz-0.9.7-1.5.rinatoxx
+[  230s] [448/532] installing libdevice-node-0.1.0-2.3.rinatoxx
+[  231s] [449/532] installing ail-0.2.87-2.3.rinatoxx
+[  231s] [450/532] installing pkgmgr-info-0.0.173-7.1.rinatoxx
+[  232s] [451/532] installing cairo-devel-1.12.14-1.3.rinatoxx
+[  232s] [452/532] installing audio-session-manager-devel-0.3.13-1.4.rinatoxx
+[  233s] [453/532] installing harfbuzz-devel-0.9.7-1.5.rinatoxx
+[  233s] [454/532] installing libdevice-node-devel-0.1.0-2.3.rinatoxx
+[  233s] [455/532] installing vconf-devel-0.2.76-2.1.rinatoxx
+[  234s] [456/532] installing csc-feature-devel-1.0.15-3.2.rinatoxx
+[  234s] [457/532] installing libmm-session-0.4.4-1.3.rinatoxx
+[  235s] [458/532] installing libsecurity-server-client-devel-0.0.118-1.3.rinatoxx
+[  235s] [459/532] installing notification-parser-1.2.2.1-1.3.rinatoxx
+[  236s] [460/532] installing pkgmgr-info-parser-0.0.173-7.1.rinatoxx
+[  236s] [461/532] installing pango-1.31.0-1.3.rinatoxx
+[  237s] [462/532] installing evas-1.7.1+svn.77561+build108b10-8.1.rinatoxx
+[  238s] [463/532] installing pulseaudio-4.0.111-10.1.rinatoxx
+[  239s] Running in chroot, ignoring request.
+[  239s] Running in chroot, ignoring request.
+[  239s] [464/532] installing ecore-imf-evas-1.7.1+svn.77580+build69b04-2.2.rinatoxx
+[  239s] [465/532] installing audio-session-manager-sdk-devel-0.3.13-1.4.rinatoxx
+[  240s] [466/532] installing ecore-input-evas-1.7.1+svn.77580+build69b04-2.2.rinatoxx
+[  240s] [467/532] installing ail-devel-0.2.87-2.3.rinatoxx
+[  241s] [468/532] installing evas-devel-1.7.1+svn.77561+build108b10-8.1.rinatoxx
+[  241s] [469/532] installing pulseaudio-libs-4.0.111-10.1.rinatoxx
+[  242s] [470/532] installing pango-devel-1.31.0-1.3.rinatoxx
+[  242s] [471/532] installing gst-plugins-base-0.10.36-6.1.rinatoxx
+[  244s] [472/532] installing pulseaudio-libs-devel-4.0.111-10.1.rinatoxx
+[  245s] [473/532] installing gst-plugins-base-devel-0.10.36-6.1.rinatoxx
+[  245s] [474/532] installing libmm-session-devel-0.4.4-1.3.rinatoxx
+[  246s] [475/532] installing avsystem-0.6.52-1.5.rinatoxx
+[  246s] [476/532] installing ecore-evas-1.7.1+svn.77580+build69b04-2.2.rinatoxx
+[  247s] [477/532] installing avsystem-devel-0.6.52-1.5.rinatoxx
+[  247s] [478/532] installing edbus-1.6.0+svn.76526slp2+build07-1.3.rinatoxx
+[  248s] [479/532] installing edje-1.7.1+svn.77330+build108b01-3.1.rinatoxx
+[  248s] [480/532] installing ecore-devel-1.7.1+svn.77580+build69b04-2.2.rinatoxx
+[  249s] [481/532] installing efreet-devel-1.7.1+svn.77412+build04b01-1.3.rinatoxx
+[  249s] [482/532] installing edbus-devel-1.6.0+svn.76526slp2+build07-1.3.rinatoxx
+[  250s] [483/532] installing libdeviced-1.0.0-8.4.rinatoxx
+[  250s] [484/532] installing ethumb-1.6.0+svn.75994slp2+build05-2.3.rinatoxx
+[  251s] [485/532] installing system-resource-resman-0.2.84-7.1.rinatoxx
+[  252s] [486/532] installing edje-devel-1.7.1+svn.77330+build108b01-3.1.rinatoxx
+[  252s] [487/532] installing edje-tools-1.7.1+svn.77330+build108b01-3.1.rinatoxx
+[  253s] [488/532] installing libdeviced-devel-1.0.0-8.4.rinatoxx
+[  253s] [489/532] installing system-resource-0.2.84-7.1.rinatoxx
+[  254s] [490/532] installing capi-system-device-0.1.0-2.2.rinatoxx
+[  255s] [491/532] installing capi-system-power-0.1.0-1.4.rinatoxx
+[  255s] [492/532] installing ethumb-devel-1.6.0+svn.75994slp2+build05-2.3.rinatoxx
+[  256s] [493/532] installing libsensord-1.1.8-3.1.rinatoxx
+[  256s] [494/532] installing elementary-1.7.1+svn.77535+build249b26-18.5.rinatoxx
+[  258s] [495/532] installing capi-system-device-devel-0.1.0-2.2.rinatoxx
+[  258s] [496/532] installing capi-system-power-devel-0.1.0-1.4.rinatoxx
+[  259s] [497/532] installing capi-system-sensor-0.1.17-2.2.rinatoxx
+[  259s] [498/532] installing sensord-1.1.8-3.1.rinatoxx
+[  260s] [499/532] installing minicontrol-0.0.16-1.3.rinatoxx
+[  261s] [500/532] installing elementary-devel-1.7.1+svn.77535+build249b26-18.5.rinatoxx
+[  261s] [501/532] installing aul-0.0.321-4.48.rinatoxx
+[  262s] [502/532] installing syspopup-0.0.121-2.65.rinatoxx
+[  262s] [503/532] installing capi-system-sensor-devel-0.1.17-2.2.rinatoxx
+[  263s] [504/532] installing libsensord-devel-1.1.8-3.1.rinatoxx
+[  263s] [505/532] installing minicontrol-devel-0.0.16-1.3.rinatoxx
+[  264s] [506/532] installing aul-devel-0.0.321-4.48.rinatoxx
+[  264s] [507/532] installing app-core-common-1.3.11-3.3.rinatoxx
+[  266s] [508/532] installing bluetooth-frwk-0.2.110-24.1.rinatoxx
+[  267s] [509/532] installing notification-0.2.23-1.5.rinatoxx
+[  268s] persist
+[  268s] [510/532] installing app-svc-0.1.57-3.2.rinatoxx
+[  269s] persist
+[  269s] [511/532] installing syspopup-caller-0.0.121-2.65.rinatoxx
+[  269s] [512/532] installing notification-devel-0.2.23-1.5.rinatoxx
+[  270s] [513/532] installing capi-network-bluetooth-0.1.48-7.1.rinatoxx
+[  271s] [514/532] installing app-core-common-devel-1.3.11-3.3.rinatoxx
+[  271s] [515/532] installing app-core-efl-1.3.11-3.3.rinatoxx
+[  272s] [516/532] installing alarm-server-0.4.113-7.1.rinatoxx
+[  272s] [517/532] installing libmm-sound-0.10.36-11.2.rinatoxx
+[  274s] [518/532] installing libmm-sound-devel-0.10.36-11.2.rinatoxx
+[  275s] [519/532] installing capi-network-bluetooth-devel-0.1.48-7.1.rinatoxx
+[  275s] [520/532] installing capi-media-audio-io-0.2.9-1.3.rinatoxx
+[  276s] [521/532] installing app-core-efl-devel-1.3.11-3.3.rinatoxx
+[  276s] [522/532] installing libfeedback-0.1.3-13.1.rinatoxx
+[  277s] [523/532] installing libalarm-0.4.113-7.1.rinatoxx
+[  277s] [524/532] installing libmm-player-0.4.50-7.1.rinatoxx
+[  278s] [525/532] installing libfeedback-devel-0.1.3-13.1.rinatoxx
+[  278s] [526/532] installing libmm-sound-sdk-devel-0.10.36-11.2.rinatoxx
+[  279s] [527/532] installing capi-appfw-application-0.1.6-3.3.rinatoxx
+[  279s] [528/532] installing tts-0.2.31-1.5.rinatoxx
+[  280s] [529/532] installing capi-appfw-application-devel-0.1.6-3.3.rinatoxx
+[  280s] [530/532] installing tts-devel-0.2.31-1.5.rinatoxx
+[  281s] [531/532] installing efl-assist-0.1.66b05-3.1.rinatoxx
+[  281s] [532/532] installing efl-assist-devel-0.1.66b05-3.1.rinatoxx
+[  282s] removing nis flags from /var/tmp/build-root/standard-armv7l/etc/nsswitch.conf...
+[  282s] now finalizing build dir...
+[  282s] build target is armv7l-tizen-linux
+[  282s] -----------------------------------------------------------------
+[  282s] ----- building test-pkg.spec (user abuild)
+[  282s] -----------------------------------------------------------------
+[  282s] -----------------------------------------------------------------
+[  282s] + exec rpmbuild --define '_srcdefattr (-,root,root)' --nosignature --target=armv7l-tizen-linux -ba /home/abuild/rpmbuild/SOURCES/test-pkg.spec
+[  282s] Building target platforms: armv7l-tizen-linux
+[  282s] Building for target armv7l-tizen-linux
+[  282s] Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.1pgVDY
+[  282s] + umask 022
+[  282s] + cd /home/abuild/rpmbuild/BUILD
+[  282s] + LANG=C
+[  282s] + export LANG
+[  282s] + unset DISPLAY
+[  282s] + cd /home/abuild/rpmbuild/BUILD
+[  282s] + rm -rf test-pkg-0.0.1
+[  282s] + /bin/gzip -dc /home/abuild/rpmbuild/SOURCES/test-pkg-0.0.1.tar.gz
+[  282s] + /bin/tar -xf -
+[  282s] + STATUS=0
+[  282s] + '[' 0 -ne 0 ']'
+[  282s] + cd test-pkg-0.0.1
+[  282s] + /bin/chmod -Rf a+rX,u+w,g-w,o-w .
+[  282s] + exit 0
+[  282s] Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.Zj1f6L
+[  282s] + umask 022
+[  282s] + cd /home/abuild/rpmbuild/BUILD
+[  282s] + cd test-pkg-0.0.1
+[  282s] + LANG=C
+[  282s] + export LANG
+[  282s] + unset DISPLAY
+[  282s] + CFLAGS='-O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Wl,--as-needed  -fmessage-length=0 -march=armv7-a -mtune=cortex-a8 -mlittle-endian  -mfpu=vfpv3 -mfloat-abi=softfp -D__SOFTFP__ -mthumb -Wa,-mimplicit-it=thumb'
+[  282s] + export CFLAGS
+[  282s] + CXXFLAGS='-O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Wl,--as-needed  -fmessage-length=0 -march=armv7-a -mtune=cortex-a8 -mlittle-endian  -mfpu=vfpv3 -mfloat-abi=softfp -D__SOFTFP__ -mthumb -Wa,-mimplicit-it=thumb'
+[  282s] + export CXXFLAGS
+[  282s] + FFLAGS='-O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Wl,--as-needed  -fmessage-length=0 -march=armv7-a -mtune=cortex-a8 -mlittle-endian  -mfpu=vfpv3 -mfloat-abi=softfp -D__SOFTFP__ -mthumb -Wa,-mimplicit-it=thumb -I%_fmoddir'
+[  282s] + export FFLAGS
+[  282s] + LD_AS_NEEDED=1
+[  282s] + export LD_AS_NEEDED
+[  282s] + exit 0
+[  282s] Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.kWHmzz
+[  282s] + umask 022
+[  282s] + cd /home/abuild/rpmbuild/BUILD
+[  282s] + cd test-pkg-0.0.1
+[  282s] + LANG=C
+[  282s] + export LANG
+[  282s] + unset DISPLAY
+[  282s] + rm -rf /home/abuild/rpmbuild/BUILDROOT/test-pkg-0.0.1-1.arm
+[  282s] + mkdir -p /home/abuild/rpmbuild/BUILDROOT/test-pkg-0.0.1-1.arm
+[  282s] + /usr/lib/rpm/find-debuginfo.sh --strict-build-id /home/abuild/rpmbuild/BUILD/test-pkg-0.0.1
+[  282s] + /usr/lib/rpm/check-buildroot
+[  282s] + /usr/lib/rpm//brp-compress
+[  282s] + /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
+[  282s] + /usr/lib/rpm/brp-strip-comment-note /usr/bin/strip /usr/bin/objdump
+[  283s] + /usr/lib/rpm/brp-python-hardlink
+[  283s] + /usr/lib/rpm/tizen/find-docs.sh /home/abuild/rpmbuild/BUILDROOT/test-pkg-0.0.1-1.arm
+[  283s] Processing files: test-pkg-0.0.1-1.armv7l
+[  283s] Processing files: test-pkg-debuginfo-0.0.1-1.armv7l
+[  283s] Processing files: test-pkg-debugsource-0.0.1-1.armv7l
+[  283s] Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/abuild/rpmbuild/BUILDROOT/test-pkg-0.0.1-1.arm
+[  283s] Wrote: /home/abuild/rpmbuild/SRPMS/test-pkg-0.0.1-1.src.rpm
+[  283s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/test-pkg-0.0.1-1.armv7l.rpm
+[  283s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/test-pkg-debuginfo-0.0.1-1.armv7l.rpm
+[  283s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/test-pkg-debugsource-0.0.1-1.armv7l.rpm
+[  283s] Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.Nns0gC
+[  283s] + umask 022
+[  283s] + cd /home/abuild/rpmbuild/BUILD
+[  283s] + cd test-pkg-0.0.1
+[  283s] + rm -rf /home/abuild/rpmbuild/BUILDROOT/test-pkg-0.0.1-1.arm
+[  283s] + rm -rf /home/abuild/rpmbuild/BUILDROOT/test-pkg-0.0.1-1.arm
+[  283s] + exit 0
+[  283s] ... checking for files with abuild user/group
+[  283s] 
+[  283s] Kalimdor finished "build test-pkg.spec" at Wed Apr  9 01:42:57 UTC 2014.
+[  283s] 

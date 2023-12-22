@@ -1,0 +1,11 @@
+prefix = /usr
+exec_prefix= /usr
+libdir = /usr/lib
+includedir = /usr/include
+
+Name : avsystem
+Description : Multimedia Framework AV system Library
+Requires : avsysaudio
+Version : 1.0
+Libs : 
+Cflags : 

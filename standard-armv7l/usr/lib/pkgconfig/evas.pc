@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: evas
+Description: Evas canvas display library
+Requires.private: eet >= 1.6.0 native-buffer pixman-1 harfbuzz fribidi fontconfig freetype2 eina >= 1.6.0 
+Version: 1.7.99.0
+Libs: -L${libdir} -levas -pthread -leina   
+Libs.private:  -pthread 
+Cflags: -I${includedir}/evas-1

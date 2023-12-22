@@ -1,0 +1,317 @@
+/*
+ * vconf-internal-keys
+ *
+ * Copyright (c) 2000 - 2011 Samsung Electronics Co., Ltd. All rights reserved.
+ *
+ * Contact: Hakjoo Ko <hakjoo.ko@samsung.com>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
+
+#ifndef __VCONF_INTERNAL_CSC_KEYS_H__
+#define __VCONF_INTERNAL_CSC_KEYS_H__
+
+/**
+ * This file defines keys and values.
+ *
+ * @file        vconf-internal-csc-keys.h
+ * @defgroup    vconf_internal_csc_key Definitions of internal shared Keys for csc
+ * @ingroup     vconf_internal_key
+ * @author      jungbae.lee@samsung.com
+ * @version     0.1
+ * @brief       This file has the definitions of shared keys for csc \n
+ */
+
+/* ============================ CSC Keys & Values ============================*/
+/**
+ * @addtogroup vconf_internal_csc_key
+ * @{
+ * @brief CSC Keys & Values \n
+ *        Maintainer : jungbae.lee@samsung.com
+ */
+
+/**
+ * @brief Current sales code about active customer in pre-configuration (string)
+ *
+ * value : the sales code \n
+ */
+#define VCONFKEY_CSC_SALESCODE				"db/csc/salescode"
+
+/**
+ * @brief Current binary code in CSC binary (string)
+ *
+ * value : the binary code \n
+ */
+#define VCONFKEY_CSC_BINCODE				"db/csc/bincode"
+
+/**
+ * @brief Current binary full version name in CSC binary (string)
+ *
+ * value : the binary full version name \n
+ */
+#define VCONFKEY_CSC_BIN_FULL_VERSION		"db/csc/bin_full_version"
+
+/**
+ * @brief Current running status for configuration mode (int)
+ *
+ * 0 : Not running
+ * 1 : Running
+ */
+#define VCONFKEY_CSC_CONFIG_MODE_RUNNING	"memory/csc/config_mode_running"
+
+/**
+ * @brief The value of country ISO in the spec. of active customer (string)
+ *
+ * value : ISO 3166-1-alpha-2 \n
+ */
+#define VCONFKEY_CSC_COUNTRY_ISO			"db/csc/country_iso"
+
+/**
+ * @brief Current operator about active customer in pre-configuration (int)
+ *
+ * value : the operator enum \n
+ */
+#define VCONFKEY_CSC_OPERATOR				"db/csc/operator"
+enum
+{
+	VCONFKEY_CSC_OPERATOR_OPEN = 0,
+
+	VCONFKEY_CSC_OPERATOR_VODAFONE,
+	VCONFKEY_CSC_OPERATOR_TMOBILE,
+	VCONFKEY_CSC_OPERATOR_ORANGE,
+	VCONFKEY_CSC_OPERATOR_O2,
+	VCONFKEY_CSC_OPERATOR_TIM,
+	VCONFKEY_CSC_OPERATOR_H3G,
+	VCONFKEY_CSC_OPERATOR_SKT,
+	VCONFKEY_CSC_OPERATOR_KT,
+	VCONFKEY_CSC_OPERATOR_LGT,
+	VCONFKEY_CSC_OPERATOR_DOCOMO,
+	VCONFKEY_CSC_OPERATOR_NRJ,	
+	VCONFKEY_CSC_OPERATOR_AMENA,
+	VCONFKEY_CSC_OPERATOR_TELEFONICA,
+	VCONFKEY_CSC_OPERATOR_EUSKALTEL,
+	VCONFKEY_CSC_OPERATOR_TMN,
+	VCONFKEY_CSC_OPERATOR_OPTIMUS,	
+	VCONFKEY_CSC_OPERATOR_TELE2,
+	VCONFKEY_CSC_OPERATOR_TELIA,	
+	VCONFKEY_CSC_OPERATOR_TDC,
+	VCONFKEY_CSC_OPERATOR_TELIASONERA,
+	VCONFKEY_CSC_OPERATOR_NETCOM,	
+	VCONFKEY_CSC_OPERATOR_TGR,
+	VCONFKEY_CSC_OPERATOR_COSMOTE,
+	VCONFKEY_CSC_OPERATOR_TRG,	
+	VCONFKEY_CSC_OPERATOR_EPLUS,
+	VCONFKEY_CSC_OPERATOR_KPN,	
+	VCONFKEY_CSC_OPERATOR_SUNRISE,
+	VCONFKEY_CSC_OPERATOR_AUT,	
+	VCONFKEY_CSC_OPERATOR_CONNEX,
+	VCONFKEY_CSC_OPERATOR_EUROTEL,		
+	VCONFKEY_CSC_OPERATOR_MTN,
+	VCONFKEY_CSC_OPERATOR_VODACOM,
+	VCONFKEY_CSC_OPERATOR_CELLC,
+	VCONFKEY_CSC_OPERATOR_OPTUS,
+	VCONFKEY_CSC_OPERATOR_MAT,
+	VCONFKEY_CSC_OPERATOR_SWISSCOM,
+	VCONFKEY_CSC_OPERATOR_MTEL,
+	VCONFKEY_CSC_OPERATOR_GLOBUL,
+	VCONFKEY_CSC_OPERATOR_YOIGO,
+	VCONFKEY_CSC_OPERATOR_DNA,
+	VCONFKEY_CSC_OPERATOR_ELISA,
+	VCONFKEY_CSC_OPERATOR_SONERA,
+	VCONFKEY_CSC_OPERATOR_SAUNALAHTI,
+	VCONFKEY_CSC_OPERATOR_P4,
+	VCONFKEY_CSC_OPERATOR_BOUYGUES,
+	VCONFKEY_CSC_OPERATOR_CELLCOM,
+	VCONFKEY_CSC_OPERATOR_PTR,
+	VCONFKEY_CSC_OPERATOR_PCL,
+	VCONFKEY_CSC_OPERATOR_VIRGIN,
+	VCONFKEY_CSC_OPERATOR_TELSTRA,
+	VCONFKEY_CSC_OPERATOR_TELECOM
+};
+
+/**
+ * @brief Current operator's country about active customer in pre-configuration (int)
+ *
+ * value : the operator's country enum \n
+ */
+#define VCONFKEY_CSC_OPERATOR_COUNTRY		"db/csc/operator_country"
+enum
+{
+	VCONFKEY_CSC_OPERATOR_COUNTRY_KOREA = 0,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_AUSTRALIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_AUSTRIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_BELGIUM,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_CHINA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_CROATIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_CZECHO,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_DENMARK,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_EGYPT,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_FINLAND,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_FRANCE,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_GERMANY,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_GREECE,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_HUNGARY,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_IRELANDS,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_ISRAEL,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_ITALY,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_JAPAN,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_MALTA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_NETHERLANDS,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_NEWZEALAND,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_NORWAY,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_POLAND,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_PORTUGAL,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_SLOVENIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_SOUTHAFRICA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_SPAIN,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_SWEDEN,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_SWISS,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_TURKEY,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_UK,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_US,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_RUSSIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_UKRAINE,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_ROMANIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_LATVIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_ESTONIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_LITHUANIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_SERBIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_ALBANIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_KAZAKHSTAN,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_SLOVAKIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_MACEDONIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_BULGARIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_BALTIC,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_ARAB,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_SINGAPORE,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_MALAYSIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_UZBEKISTAN,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_ICELAND,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_CYPRUS,	
+	VCONFKEY_CSC_OPERATOR_COUNTRY_QATAR,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_PHILIPPINES,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_HONGKONG,	
+	VCONFKEY_CSC_OPERATOR_COUNTRY_TAIWAN,	
+	VCONFKEY_CSC_OPERATOR_COUNTRY_INDIA,	
+	VCONFKEY_CSC_OPERATOR_COUNTRY_LEBANON,	
+	VCONFKEY_CSC_OPERATOR_COUNTRY_OMAN,	
+	VCONFKEY_CSC_OPERATOR_COUNTRY_MOLDOVA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_MAURITIUS,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_KUWAIT,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_SYRIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_MOROCCO,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_LUXEMBOURG,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_MONTENEGRO,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_ALGERIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_BOSNIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_IRAN,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_INDONESIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_VIETNAM,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_THAILAND,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_PAKISTAN,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_ARMENIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_TUNISIA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_NEPAL,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_BANGLADESH,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_SRILANKA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_KENYA,
+	VCONFKEY_CSC_OPERATOR_COUNTRY_NIGERIA
+};
+
+
+/**
+ * @brief Current operator's region about active customer in pre-configuration (int)
+ *
+ * value : the operator's region enum \n
+ */
+#define VCONFKEY_CSC_OPERATOR_REGION		"db/csc/operator_region"
+enum
+{
+	VCONFKEY_CSC_OPERATOR_REGION_GLOBAL = 0,
+
+	VCONFKEY_CSC_OPERATOR_REGION_NORDIC,
+	VCONFKEY_CSC_OPERATOR_REGION_SEASIA
+};
+
+
+/**
+ * @brief Current operator's SIM about active customer in pre-configuration (int)
+ *
+ * 0 : The operator's postpaid SIM \n
+ * 1 : The operator's prepaid SIM \n
+ */
+#define VCONFKEY_CSC_OPERATOR_SIM			"db/csc/operator_sim"
+enum
+{
+	VCONFKEY_CSC_OPERATOR_SIM_POSTPAY = 0,
+	VCONFKEY_CSC_OPERATOR_SIM_PREPAY = 1
+};
+
+
+/**
+ * @brief PS auto attach setting for network (int)
+ *
+ * 0 : Disable
+ * 1 : Enable
+ */
+#define VCONFKEY_CSC_NET_PS_AUTO_ATTACH		"db/csc/network/ps_auto_attach"
+
+
+/**
+ * @brief PS detach trigger setting for network (int)
+ *
+ * 0 : Disable
+ * 1 : Enable
+ */
+#define VCONFKEY_CSC_NET_PS_AUTO_DETACH		"db/csc/network/ps_auto_detach"
+
+
+/**
+ * @brief WB-AMR codec setting for network (int)
+ *
+ * 0 : Disable
+ * 1 : Enable
+ */
+#define VCONFKEY_CSC_NET_WB_AMR_CODEC		"db/csc/network/wb_amr_codec"
+
+
+/**
+ * @brief File path for the Power on/off animation & sound (string)
+ *
+ * value : File path
+ */
+#define VCONFKEY_CSC_POWER_ANI_FILE_PATH	"db/csc/power_ani_file_path"
+
+
+/**
+ * @brief Specific text string for using in a customer (string)
+ *
+ * value : the sales code \n
+ */
+#define VCONFKEY_CSC_TEXT_STRING_CUSTOMER	"db/csc/text_string_customer"
+
+
+/**
+ * @brief Specific text string for using in a country (string)
+ *
+ * value : ISO 3166-1-alpha-2 \n
+ */
+#define VCONFKEY_CSC_TEXT_STRING_COUNTRY	"db/csc/text_string_country"
+
+
+/**
+ * @}
+ */
+
+#endif	/* __VCONF_INTERNAL_CSC_KEYS_H__ */

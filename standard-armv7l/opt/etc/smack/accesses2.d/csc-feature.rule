@@ -1,0 +1,3 @@
+csc-feature system::homedir rwxat
+csc-feature system::vconf_inhouse rw
+csc-feature csc-manager r

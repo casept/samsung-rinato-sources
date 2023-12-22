@@ -1,0 +1,11 @@
+# Package Information for pkg-config
+prefix=/usr
+exec_prefix=/usr/bin
+libdir=/usr/lib
+includedir=/usr/include/device-node
+
+Name: device node library
+Description: Library to control OAL apis for system f/w
+Version: 0.1
+Libs: -L${libdir} -ldevice-node
+Cflags: -I${includedir}

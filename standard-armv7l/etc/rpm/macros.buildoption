@@ -1,0 +1,25 @@
+# build options
+# SEC tizen project build options.
+
+# Default options.
+# - macros.buildoption file is sourced(included) first
+# 	then macros.buildoption.MODEL_REGION_OPERATOR file is sourced later.
+# 	So in macros.buildoption.MODEL_REGION_OPERATOR file, only set variables different from default value.
+
+# %var_name default_value list of option variable.
+
+# hardware revision(or version)
+%sec_build_option_hw_revision 00
+
+# build ID and Number
+%sec_build_option_version %{!?nil}
+%sec_build_option_build_number %(date +%Y%m%d.%H%M%S)
+
+# product model info
+%sec_build_option_product_brand %{!?nil}
+%sec_build_option_product_manufacturer %{!?nil}
+%sec_build_option_product_name %{!?nil}
+%sec_build_option_product_model %{!?nil}
+
+# CSC version Number
+%sec_build_option_csc_version %{!?nil}

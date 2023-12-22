@@ -1,0 +1,76 @@
+# input
+SUBSYSTEM=="input", KERNEL=="mouse*|mice|event*", GROUP="input", SECLABEL{smack}="device::input"
+
+# joystick
+SUBSYSTEM=="input", ENV{ID_INPUT_JOYSTICK}=="?*", SECLABEL{smack}="device::joystick"
+
+# safe mode
+SUBSYSTEM=="sec", ACTION=="change", DEVPATH=="/devices/virtual/sec/sec_input_bridge", ENV{SAFE_MODE}=="ON", RUN+="/usr/bin/set-safemode.sh"
+
+ACTION!="add", GOTO="devices_end"
+
+KERNEL=="null|zero|full|random|urandom|uinput", SECLABEL{smack}="*"
+
+KERNEL=="fb[0-9]", GROUP="video", SECLABEL{smack}="device::video"
+KERNEL=="umts_csd", GROUP="video", SECLABEL{smack}="*"
+KERNEL=="media[0-9]", MODE="0664", GROUP="video", SECLABEL{smack}="*"
+
+KERNEL=="event*", SYMLINK+="%k"
+
+# audio, recording
+KERNEL=="radio[0-9]", GROUP="radio", SECLABEL{smack}="device::radio"
+KERNEL=="pcmC[0-9]D[0-9]c", GROUP="recording", SECLABEL{smack}="device::recording"
+KERNEL=="pcmC[0-9]D[0-9]p", GROUP="audio", SECLABEL{smack}="device::audio"
+KERNEL=="controlC[0-9]", GROUP="audio", SECLABEL{smack}="device::audio"
+KERNEL=="timer", SUBSYSTEM=="sound", GROUP="audio", SECLABEL{smack}="device::audio"
+KERNEL=="hwC[0-9]D[0-9]", GROUP="audio", SECLABEL{smack}="device::audio"
+
+# log
+KERNEL=="log_main", GROUP="app_logging", SECLABEL{smack}="device::app_logging"
+KERNEL=="log_events", GROUP="app_logging", SECLABEL{smack}="device::app_logging"
+KERNEL=="log_radio", GROUP="app_logging", SECLABEL{smack}="device::app_logging"
+KERNEL=="log_system", GROUP="sys_logging", SECLABEL{smack}="device::sys_logging"
+
+KERNEL=="usb_mtp_gadget", GROUP="usb_device", SECLABEL{smack}="device::mtp"
+KERNEL=="samsung_sdb", SECLABEL{smack}="*"
+
+# OneSeg
+KERNEL=="isdbt", GROUP="app", SECLABEL{smack}="device::isdbt"
+
+# Marvell
+KERNEL=="uio[0-9]", MODE="0666", SECLABEL{smack}="*"
+
+# RFCOMM TTY
+KERNEL=="rfcomm[0-9]", SECLABEL{smack}="device::dialout"
+
+KERNEL=="mobicore-user", SECLABEL{smack}="*"
+
+# usb
+ACTION=="add", KERNEL=="lp[0-9]*", SUBSYSTEMS=="usb", GROUP="app", SECLABEL{smack}="device::printer"
+
+# Brightness control
+SUBSYSTEM=="backlight", ATTR{brightness}=="?*", RUN+="/bin/chmod 0664 %S/%p/brightness", RUN+="/bin/chown :system_bklight %S/%p/brightness", RUN+="/usr/bin/chsmack -a device::bklight %S/%p/brightness"
+SUBSYSTEM=="backlight", ATTR{brightness}=="?*", RUN+="/bin/chmod 0660 %S/%p/overheating"
+
+# display refresh (will be changed)
+DRIVER=="exynos-drm-fimd", RUN+="/bin/chmod 0660 %S/%p/refresh", RUN+="/usr/bin/chsmack -a device::bklight %S/%p/refresh"
+
+# cabc
+SUBSYSTEM=="lcd", RUN+="/bin/chmod 0660 %S/%p/cabc", RUN+="/usr/bin/chsmack -a device::bklight %S/%p/cabc"
+
+# flash (7/16 added)
+SUBSYSTEM=="camera", RUN+="/bin/chmod 0666 %S/%p/rear_flash", RUN+="/usr/bin/chsmack -a device::led %S/%p/rear_flash"
+SUBSYSTEM=="camera", RUN+="/bin/chmod 0666 %S/%p/max_brightness", RUN+="/usr/bin/chsmack -a device::led %S/%p/max_brightness"
+
+# mDNIe
+DRIVER=="mdnie", RUN+="/bin/chmod 0660 %S/%p/mode", RUN+="/usr/bin/chsmack -a device::mdnie %S/%p/mode"
+DRIVER=="mdnie", RUN+="/bin/chmod 0660 %S/%p/scenario", RUN+="/usr/bin/chsmack -a device::mdnie %S/%p/scenario"
+DRIVER=="mdnie", RUN+="/bin/chmod 0660 %S/%p/tone", RUN+="/usr/bin/chsmack -a device::mdnie %S/%p/tone"
+DRIVER=="mdnie", RUN+="/bin/chmod 0660 %S/%p/outdoor", RUN+="/usr/bin/chsmack -a device::mdnie %S/%p/outdoor"
+DRIVER=="mdnie", RUN+="/bin/chmod 0660 %S/%p/tune", RUN+="/usr/bin/chsmack -a device::mdnie %S/%p/tune"
+DRIVER=="mdnie", RUN+="/bin/chmod 0660 %S/%p/cabc", RUN+="/usr/bin/chsmack -a device::mdnie %S/%p/cabc"
+DRIVER=="mdnie", RUN+="/bin/chmod 0660 %S/%p/color_blind, "RUN+="/usr/bin/chsmack -a device::mdnie %S/%p/color_blind"
+
+SUBSYSTEM=="flip", DRIVER=="hall-sensor", RUN+="/usr/bin/chsmack -a device::hall %S/%p/cover_status"
+
+LABEL="devices_end"

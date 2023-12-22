@@ -1,0 +1,6 @@
+Name: evas-software-x11
+Description: Evas software X11 engine
+Version: 1.7.99.0
+
+Xlib=yes
+XCB=no

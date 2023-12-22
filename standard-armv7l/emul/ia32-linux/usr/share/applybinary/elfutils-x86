@@ -1,0 +1,13 @@
+/usr/bin/eu-addr2line
+/usr/bin/eu-ar
+/usr/bin/eu-elfcmp
+/usr/bin/eu-elflint
+/usr/bin/eu-findtextrel
+/usr/bin/eu-nm
+/usr/bin/eu-objdump
+/usr/bin/eu-ranlib
+/usr/bin/eu-readelf
+/usr/bin/eu-size
+/usr/bin/eu-strings
+/usr/bin/eu-strip
+/usr/bin/eu-unstrip

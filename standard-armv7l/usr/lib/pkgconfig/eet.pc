@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: eet
+Description: Library for speedy data storage, retrieval, and compression
+Version: 1.7.99.0
+Requires.private: eina >= 1.2.0  zlib
+Libs: -L${libdir} -leet
+Libs.private:  -ljpeg  -lm
+Cflags: -I${includedir}/eet-1

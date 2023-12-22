@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: remix
+Description: An audio rendering library
+Requires: ctxdata sndfile
+Version: 0.2.4
+Libs: -L${libdir} -lremix -ldl
+Cflags: -I${includedir}

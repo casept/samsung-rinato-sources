@@ -1,0 +1,42 @@
+#
+# Feature naming rule
+#
+#	format)
+#	%sec_product_feature_[Module name]_[Function name] [Values]
+#
+#	- Feature name must be lower case letters.
+#	- Values : BOOLEAN (1/0) or STRING
+#	ex)
+#		Module name - wlan
+#		Function name - disable_5g
+#		Values - 1/0 (default : 0)
+#
+#	%sec_product_feature_wlan_disable_5g 0
+#
+#	ex)
+#		Module name - ril
+#		Function name - mms_uap_tag_name
+#		Values - x-wap-profile
+#
+#	%sec_product_feature_ril_mms_uap_tag_name "x-wap-profile"
+#
+
+# config for ...
+
+%sec_product_feature_wlan_concurrent_mode 1
+
+%sec_product_feature_graphics_adreno 1
+
+%sec_product_feature_mmfw_codec_exynos_3250 1
+
+%sec_product_feature_mmfw_codec_qc 0
+
+%sec_product_feature_mmfw_audio_qc_ucm 1
+
+%sec_product_feature_mmfw_enable_qcom_adsp 1
+
+%sec_product_feature_display_resolution 320x320
+
+%sec_product_feature_secure_boot 1
+
+%sec_product_feature_telephony_disable 1

@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: libtbm
+Description: the library for Tizen Buffer Manager
+Version: 1.0.0
+Requires: libdrm
+Libs: -L${libdir} -ltbm   -ldrm   
+Cflags: -I${includedir}   -I/usr/include/libdrm -I/usr/include/exynos   
